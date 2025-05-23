@@ -8,9 +8,11 @@ Excluding taboo words can prevent participant traumatization.
 A frequency cut-off can be used to exclude low-frequency words. 
 
 Pro:
+
 - Reduces the number of low-frequency words
 
 Con:
+
 - May not be representative of the language
 - Requires additional work to determine the cut-off point
 
