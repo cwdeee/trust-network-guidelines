@@ -20,4 +20,5 @@ extra_css:
   - stylesheets/extra.css
 nav:
   - Home: index.md
+  - Materials: materials.md
   - About: about.md
