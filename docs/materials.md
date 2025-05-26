@@ -1,10 +1,10 @@
 ### Word Selection in German: Variables to Consider
 Here is a list of variables to be considered when selecting words for word recognition tasks like a lexical decision task in German. 
 
-#### Exclusion of Taboo Words
+#### Exclusion of Taboo Words ![Importance Rating 2](images/rating2.png)
 Excluding taboo words can prevent participant traumatization.
 
-#### Word frequency
+#### Word frequency ![Importance Rating 4](images/rating4.png)
 A frequency cut-off can be used to exclude low-frequency words. 
 
 Pro:
