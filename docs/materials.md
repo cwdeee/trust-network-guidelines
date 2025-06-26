@@ -30,6 +30,11 @@ Texts that have been used as movie/TV series subtitles. They represent spoken la
 - [FILMS corpus](https://osf.io/rd7p6/)
 
 ##### Internet Corpora 
+This type of resource collects texts available on the Internet. The advantage is that a large amount of text is available. However, data quality is typically lower (i.e., there is a higher rate of misspellings).
+
+- [Leipzig corpus](https://corpora.uni-leipzig.de/en?corpusId=deu_news_2021) 
+- [deWaC corpus](https://wacky.sslmit.unibo.it/doku.php?id=frequency_lists)
+
 ##### Ways to generate Corpora 
 
 #### Variables to Consider
