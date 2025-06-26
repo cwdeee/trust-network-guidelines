@@ -5,6 +5,7 @@ In lexical decision experiments, participants see a single word or pseudoword on
 Generally, corpora differ in size and register. A small corpus may provide inaccurate frequency estimates, especially for low-frequency words ([more details](https://doi.org/10.1037/0096-3445.113.2.256)). Register refers to the population sampled in the corpus. For example, the words in a child-book corpus differ from those in an adult newspaper corpus. Further, we can distinguish between written, spoken, subtitle and internet corpora as well as ways to generate specific corpora. Below, we present a non-exhaustive list of German resources that the members of the group recommend.
 
 Register Legend:
+
 | Symbol | Register |
 | --- | --- |
 | 👧 | Children |
@@ -13,10 +14,11 @@ Note that no symbol reflects that the register are typical adults.
 
 ##### Written Corpora 
 Texts collected from newspapers and books. 
+
 - [dlexDB corpus](https://doi.org/10.5281/zenodo.15097663)
 - [DWDS corpus](https://www.dwds.de/r/lexdb#kern)
 - [WebCELEX corpus](https://webcelex.ivdnt.org/)
-- 👧[ChildLex corpus](https://www.dwds.de/r/lexdb#kern)
+- 👧[ChildLex corpus](https://www.dwds.de/d/korpora/childlex)
 
 ##### Spoken Corpora 
 ##### Subtitle Corpora 
