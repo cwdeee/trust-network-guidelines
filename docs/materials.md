@@ -22,7 +22,7 @@ Texts collected from newspapers and books.
 
 - [dlexDB corpus](https://doi.org/10.5281/zenodo.15097663)
 - [DWDS corpus](https://www.dwds.de/r/lexdb#kern)
-- [WebCELEX corpus](https://webcelex.ivdnt.org/)
+- [WebCELEX corpus](https://webcelex.ivdnt.org/) (Uni-Login needed)
 - 👧[ChildLex corpus](https://www.dwds.de/d/korpora/childlex)
 
 ##### Spoken Corpora 
@@ -43,7 +43,7 @@ This type of resource collects texts available on the Internet. The advantage is
 ##### Ways to generate Corpora 
 Here are new ideas for creating corpora with generative language models ([more details](https://doi.org/10.31234/osf.io/gm9b6_v5)). 
 
-- 👧[LLM created ChildLex corpora](https://doi.org/h10.17605/OSF.IO/WMUVJ)
+- 👧[LLM created ChildLex corpora](https://doi.org/10.17605/OSF.IO/WMUVJ)
 
 
 
