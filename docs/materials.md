@@ -9,8 +9,8 @@ Generally, corpora differ in size and register. A small corpus may provide inacc
 ##### Subtitle Corpora 
 Texts that have been used as movie/TV series subtitles. They represent spoken language after a script but provide written word forms. 
 
-- [SubtLex corpus](https://osf.io/py9ba/files/osfstorage target="_blank")
-- [FILMS corpus](https://osf.io/rd7p6/files/osfstorage target="_blank") 
+- [SubtLex corpus](https://osf.io/py9ba/files/osfstorage){:target="_blank"}
+- [FILMS corpus](https://osf.io/rd7p6/files/osfstorage){:target="_blank"} 
 
 ##### Internet Corpora 
 ##### Ways to generate Corpora 
