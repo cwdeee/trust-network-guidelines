@@ -36,6 +36,9 @@ This type of resource collects texts available on the Internet. The advantage is
 - [deWaC corpus](https://wacky.sslmit.unibo.it/doku.php?id=frequency_lists)
 
 ##### Ways to generate Corpora 
+Here are ideas of creating corpora  with geneartive language models ([more details](https://doi.org/10.31234/osf.io/gm9b6_v5)). 
+
+- 👧[LLM created ChildLex corpora](https://doi.org/h10.17605/OSF.IO/WMUVJ)
 
 #### Variables to Consider
 Here is a list of variables to be considered when selecting words for word recognition tasks like a lexical decision task in German. 
