@@ -21,6 +21,8 @@ Texts collected from newspapers and books.
 - 👧[ChildLex corpus](https://www.dwds.de/d/korpora/childlex)
 
 ##### Spoken Corpora 
+
+https://dgd.ids-mannheim.de/dgd/pragdb.dgd_extern.sys_inv?v_session_id=
 ##### Subtitle Corpora 
 Texts that have been used as movie/TV series subtitles. They represent spoken language after a script but provide written word forms. 
 
