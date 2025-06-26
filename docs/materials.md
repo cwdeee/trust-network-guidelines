@@ -45,7 +45,7 @@ Here are new ideas for creating corpora with generative language models ([more d
 
 - 👧[LLM created ChildLex corpora](https://doi.org/10.17605/OSF.IO/WMUVJ)
 
-
+<p></p>
 
 #### Variables to Consider
 Here is a list of variables to be considered when selecting words for word recognition tasks like a lexical decision task in German. 
