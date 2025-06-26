@@ -1,7 +1,13 @@
-### Word Selection in German: Variables to Consider
+### Stimulus Selection for German lexicon decision tasks
+In lexical decision experiments, participants see a single word or pseudoword on the screen and respond with a keypress to indicate whether the item is a word or a pseudoword. Items are generally selected to fit specific criteria that depend on the research question. The first step is to select the items – to identify suitable words and find or generate pseudowords. One should select Words from Corpora: these resources contain many words from a given language and allow us to determine specific word characteristics, which are, in turn, important as selection criteria. Word frequency is one of the essential variables for lexical decision studies: How often a word occurs per million words in natural language ([more details](https://doi.org/10.1177/0963721417727)). Conducting a lexical decision experiment in German requires relying on existing resources. Many resources are freely available, and others require a university account. We provide links in the following.
+
+#### Corpora to Consider
+Generally, corpora differ in size and register. A small corpus may provide inaccurate frequency estimates, especially for low-frequency words ([more details](https://doi.org/10.1037/0096-3445.113.2.256)). Register refers to the population sampled in the corpus. For example, the words in a child-book corpus differ from those in an adult newspaper corpus. Further, we can distinguish between written, spoken, and internet corpora. 
+
+#### Variables to Consider
 Here is a list of variables to be considered when selecting words for word recognition tasks like a lexical decision task in German. 
 
-#### Exclusion of Taboo Words ![Importance Rating 2](images/rating2.png)
+##### Exclusion of Taboo Words ![Importance Rating 2](images/rating2.png)
 Excluding taboo words can prevent participant traumatization.
 
 #### Word frequency ![Importance Rating 4](images/rating4.png)
