@@ -28,8 +28,9 @@ Texts collected from newspapers and books.
     - Key features: Provides annotated data, Representative for 20th century
 - [WebCELEX corpus](https://webcelex.ivdnt.org/) (University-Login needed)
     - Easy to use, contains frequency values, lemmatisation, and phonological transcription and syllable-level statistics, Based only on newspapers, so not representative 
-
 - 👧[ChildLex corpus](https://www.dwds.de/d/korpora/childlex)
+    - Separate frequency counts for different ages (between 6 and 12), Contains annotation about word class, lemma, orthographic neighbourhood, bigram frequencies, etc.
+
 
 #### Spoken Corpora 
 [Here](https://dgd.ids-mannheim.de/dgd/pragdb.dgd_extern.sys_inv?v_session_id=) one can find a list of German corpora of spoken language with diverse Registers and Sizes (Sign up necessary) constantly updated by the Institute of the German Language in Manheim. 
