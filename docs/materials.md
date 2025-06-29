@@ -23,9 +23,9 @@ Note that no symbol reflects that the register are typical adults.
 Texts collected from newspapers and books. 
 
 - [dlexDB corpus](https://doi.org/10.5281/zenodo.15097663)
-    - Key features: syllable frequency, letter n-gram frequencies, and orthographic similarity
+    - Syllable frequency, letter n-gram frequencies, and orthographic similarity
 - [DWDS corpus](https://www.dwds.de/r/lexdb#kern)
-    - Key features: Provides annotated data, Representative for 20th century
+    - Provides annotated data, Representative for 20th century
 - [WebCELEX corpus](https://webcelex.ivdnt.org/) (University-Login needed)
     - Easy to use, contains frequency values, lemmatisation, and phonological transcription and syllable-level statistics, Based only on newspapers, so not representative 
 - 👧[ChildLex corpus](https://www.dwds.de/d/korpora/childlex)
