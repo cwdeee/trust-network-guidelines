@@ -1,6 +1,8 @@
-## Stimulus Selection for German lexicon decision tasks
-In lexical decision experiments, participants see a single word or pseudoword on the screen and respond with a keypress to indicate whether the item is a word or a pseudoword. Items are generally selected to fit specific criteria that depend on the research question. The first step is to select the items – to identify suitable words and find or generate pseudowords. One should select Words from Corpora: these resources contain many words from a given language and allow us to determine specific word characteristics, which are, in turn, important as selection criteria. Word frequency is one of the essential variables for lexical decision studies: How often a word occurs per million words in natural language ([more details](https://doi.org/10.1177/0963721417727521)). 
+This section is concerned with the stimulus Selection for German lexicon decision tasks. In lexical decision experiments, participants see a single word or pseudoword on the screen and respond with a keypress to indicate whether the item is a word or a pseudoword. Items are generally selected to fit specific criteria that depend on the research question. The first step is to select the items – to identify suitable words and find or generate pseudowords. 
 
+
+## Where to find words
+One should select Words from Corpora: these resources contain many words from a given language and allow us to determine specific word characteristics, which are, in turn, important as selection criteria. Word frequency is one of the essential variables for lexical decision studies: How often a word occurs per million words in natural language ([more details](https://doi.org/10.1177/0963721417727521)). 
 
 
 ### Corpora to Consider
@@ -21,12 +23,16 @@ Note that no symbol reflects that the register are typical adults.
 Texts collected from newspapers and books. 
 
 - [dlexDB corpus](https://doi.org/10.5281/zenodo.15097663)
+    - Key features: syllable frequency, letter n-gram frequencies, and orthographic similarity
 - [DWDS corpus](https://www.dwds.de/r/lexdb#kern)
-- [WebCELEX corpus](https://webcelex.ivdnt.org/) (Uni-Login needed)
+    - Key features: Provides annotated data, Representative for 20th century
+- [WebCELEX corpus](https://webcelex.ivdnt.org/) (University-Login needed)
+    - Easy to use, contains frequency values, lemmatisation, and phonological transcription and syllable-level statistics, Based only on newspapers, so not representative 
+
 - 👧[ChildLex corpus](https://www.dwds.de/d/korpora/childlex)
 
 #### Spoken Corpora 
-[Here](https://dgd.ids-mannheim.de/dgd/pragdb.dgd_extern.sys_inv?v_session_id=) one can find a list of updated German corpora of spoken language with diverse Registers and Sizes (sign up necessary)
+[Here](https://dgd.ids-mannheim.de/dgd/pragdb.dgd_extern.sys_inv?v_session_id=) one can find a list of German corpora of spoken language with diverse Registers and Sizes (Sign up necessary) constantly updated by the Institute of the German Language in Manheim. 
 
 #### Subtitle Corpora 
 Texts that have been used as movie/TV series subtitles. They represent spoken language after a script but provide written word forms. 
@@ -40,20 +46,20 @@ This type of resource collects texts available on the Internet. The advantage is
 - [Leipzig corpus](https://corpora.uni-leipzig.de/en?corpusId=deu_news_2021) 
 - [deWaC corpus](https://wacky.sslmit.unibo.it/doku.php?id=frequency_lists)
 
-##### Ways to generate Corpora 
+#### Ways to generate Corpora 
 Here are new ideas for creating corpora with generative language models ([more details](https://doi.org/10.31234/osf.io/gm9b6_v5)). 
 
 - 👧[LLM created ChildLex corpora](https://doi.org/10.17605/OSF.IO/WMUVJ)
 
-<p></p>
 
-#### Variables to Consider
-Here is a list of variables to be considered when selecting words for word recognition tasks like a lexical decision task in German. 
 
-##### Exclusion of Taboo Words ![Importance Rating 2](images/rating2.png)
+## Letter-string characteristics to Consider
+Here is a list of variables that reflect specific aspects of words and non-words that should be considered when selecting stimuli for word recognition tasks like a lexical decision task in German. 
+
+### Exclusion of Taboo Words ![Importance Rating 2](images/rating2.png)
 Excluding taboo words can prevent participant traumatization.
 
-#### Word frequency ![Importance Rating 4](images/rating4.png)
+### Word frequency ![Importance Rating 4](images/rating4.png)
 A frequency cut-off can be used to exclude low-frequency words. 
 
 Pro:
