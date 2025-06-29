@@ -1,9 +1,9 @@
-### Stimulus Selection for German lexicon decision tasks
+## Stimulus Selection for German lexicon decision tasks
 In lexical decision experiments, participants see a single word or pseudoword on the screen and respond with a keypress to indicate whether the item is a word or a pseudoword. Items are generally selected to fit specific criteria that depend on the research question. The first step is to select the items – to identify suitable words and find or generate pseudowords. One should select Words from Corpora: these resources contain many words from a given language and allow us to determine specific word characteristics, which are, in turn, important as selection criteria. Word frequency is one of the essential variables for lexical decision studies: How often a word occurs per million words in natural language ([more details](https://doi.org/10.1177/0963721417727521)). 
 
 
 
-#### Corpora to Consider
+### Corpora to Consider
 Conducting a lexical decision experiment in German requires relying on existing resources. Many resources are freely available, and others require a university account. Generally, corpora differ in size and register. A small corpus may provide inaccurate frequency estimates, especially for low-frequency words ([more details](https://doi.org/10.1037/0096-3445.113.2.256)). Register refers to the population sampled in the corpus. For example, the words in a child-book corpus differ from those in an adult newspaper corpus. Further, we can distinguish between written, spoken, subtitle and internet corpora as well as ways to generate specific corpora. Below, we present a non-exhaustive list of German resources that the members of the group recommend. To ensure word status, we highly recommended checking multiple corpora to account for potential miss spellings that happen regularly. 
 
 
@@ -17,7 +17,7 @@ Register Legend:
 
 Note that no symbol reflects that the register are typical adults.
 
-##### Written Corpora 
+#### Written Corpora 
 Texts collected from newspapers and books. 
 
 - [dlexDB corpus](https://doi.org/10.5281/zenodo.15097663)
@@ -25,16 +25,16 @@ Texts collected from newspapers and books.
 - [WebCELEX corpus](https://webcelex.ivdnt.org/) (Uni-Login needed)
 - 👧[ChildLex corpus](https://www.dwds.de/d/korpora/childlex)
 
-##### Spoken Corpora 
+#### Spoken Corpora 
 [Here](https://dgd.ids-mannheim.de/dgd/pragdb.dgd_extern.sys_inv?v_session_id=) one can find a list of updated German corpora of spoken language with diverse Registers and Sizes (sign up necessary)
 
-##### Subtitle Corpora 
+#### Subtitle Corpora 
 Texts that have been used as movie/TV series subtitles. They represent spoken language after a script but provide written word forms. 
 
 - [SubtLex corpus](https://osf.io/py9ba/)
 - [FILMS corpus](https://osf.io/rd7p6/)
 
-##### Internet Corpora 
+#### Internet Corpora 
 This type of resource collects texts available on the Internet. The advantage is that a large amount of text is available. However, data quality is typically lower (i.e., there is a higher rate of misspellings).
 
 - [Leipzig corpus](https://corpora.uni-leipzig.de/en?corpusId=deu_news_2021) 
