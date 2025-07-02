@@ -2,7 +2,7 @@ This section is concerned with the stimulus Selection for German lexicon decisio
 
 
 ## Where to find words
-One should select Words from Corpora: these resources contain many words from a given language and allow us to determine specific word characteristics, which are, in turn, important as selection criteria. Word frequency is one of the essential variables for lexical decision studies: How often a word occurs per million words in natural language ([more details](https://doi.org/10.1177/0963721417727521)). 
+One should select Words from Corpora. The field of corpus linguistics provides text resources that offer representative collections of texts, including the most critical words from a given language. These resources allow us to determine the word status of a letter string and word characteristics that are important as selection criteria. For example, word frequency is one of the essential variables for lexical decision studies, that describes how often a word occurs per million words in a corpus which depending on the corpus quality (i.e., size and register) more or less reflects the frequency in natural language ([more details](https://doi.org/10.1177/0963721417727521)). 
 
 
 ### Corpora to Consider
