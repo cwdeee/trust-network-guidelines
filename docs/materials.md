@@ -54,7 +54,7 @@ Here are new ideas for creating corpora with generative language models ([more d
 
 ### Variables to consider 
 
-Words vary in terms of orthographic features (e.g., number of letters, written word form frequency), phonological features (e.g., number of syllables, number of phonemes), morphological features (e.g., morphological complexity, number of morphemes), and semantic features (e.g., word class, valence). There are no hard rules about what items should be excluded when selecting items. Manual filtering is not recommended, as it’s time-consuming and error-prone. The filtering process depends on the research question.
+Words vary in terms of orthographic features (e.g., number of letters, written word form frequency), phonological features (e.g., number of syllables, number of phonemes), morphological features (e.g., morphological complexity, number of morphemes), syntactical features (e.g., Part of Speech) and semantic features (e.g., word class, valence). There are no hard rules about what items should be excluded when selecting items. Manual filtering is not recommended, as it’s time-consuming and error-prone. The filtering process depends on the research question.
 
 #### Exclusion of Taboo Words ![Importance Rating 2](images/rating2.png)
 Excluding taboo words can prevent participant traumatization. Thus, such words should only be used if necessary, and experiments involving them should account for measures that prevent adverse outcomes for participants. In general, it is advised to consult with an ethics committee. It is recommended to exclude slurs that some participants may perceive to be personally offensive and to include a trigger warning if such words are under investigation. [Sulpizio et al. (2024)](https://doi.org/10.3758/s13428-024-02376-6) provide a full list of German taboo words as supplementary materials.
@@ -90,7 +90,7 @@ Cons:
 
 - Lemmas are often not identical to what is seen or heard in natural language
 
-####  Filtering by other variables
+####  Filtering by other word characteristics
 It is common to filter experimental items by other word characteristics. This has the advantage of removing “weird” items and removing variance that is not associated with an effect of interest, but at the same time runs the risk of creating a word set that is not representative of the actual language. 
 
 Pro
@@ -102,20 +102,21 @@ Cons
 - May not be representative of the language
 - The cut-off points will be somewhat arbitrary 
 
-##### Frequency: There is an argument for excluding words with particularly low frequency, as these will be unknown to many participants.  
+##### Word frequency 
+There is an argument for excluding words with particularly low frequency, as these will be unknown to many participants.  
 
 - The experimenter can base the cut-off on written or spoken word frequency. Although they correlate, there is some dissociation between them. 
 - One should expect higher error rates if many low-frequency words are included. Rarely used words will likely be categorised as "not-a-word". 
 - It may be advisable to select the words so that one can check if the frequency effect is present in the collected data. This will provide a sanity check. The frequency effect is generally observable when the frequency lies between 0 and 2, in log-frequency per million.
 
-##### Length (letters, phonemes, syllables) 
+##### Word length (letters, phonemes, syllables) 
 
 - There may be pragmatic reasons for excluding very long words (i.e., making sure they fit on the screen)
-- There may be physiological reasons for excluding very long words (i.e., making sure the word fits the size of the retina, thus restricting the need for eye movements; an Empirical length restriction estimate would be 7 or fewer letters; e.g., see Kliegl et al., 2004)
+- There may be physiological reasons for excluding very long words (i.e., making sure the word fits the size of the retina, thus restricting the need for eye movements; an Empirical length restriction estimate would be 7 or fewer letters; e.g., see [Kliegl et al., 2004](https://doi.org/10.1080/09541440340000213)
 - One should be mindful that this may lead to a non-representative sample of words, such as a disproportionate exclusion of compound words and low-frequency words. 
 - Furthermore, there is no agreed-upon cut-off at which one would exclude words. 
 - Length covaries with many other variables, such as orthographic neighbourhood (long words have very few orthographic neighbours, if any). In selecting the length range, one should consider the extent to which length covaries with variables one is interested in.
-- Opinion taken by some previous studies (e.g., Sally Andrews, https://doi.org/10.1037/0278-7393.15.5.802) is to restrict the items to one word length, e.g., using only monosyllabic four-letter words.
+- Opinion taken by some previous studies (e.g., [Andrews, 1989](https://doi.org/10.1037/0278-7393.15.5.802) or [Fu & Gagl, 2025](https://doi.org/10.1162/jocn_a_02301)) is to restrict the items to one word length, e.g., using only monosyllabic four-letter words.
 
 ##### Orthographic similarity/familiarity 
 
@@ -124,3 +125,30 @@ Cons
 - Classical measures of letter string similarity would be orthographic neighborhood size (i.e., there is also a phoneme level version), orthographic Levenshtein distance or similar. 
 - More recently, neuro-cognitively motivated measures as the orthographic prediction error representations have been established, with a central advantage as the measure similarity without a confound in familiarity. 
 
+## Non-word creation and selection:
+A lexical decision task requires using non-word stimuli, most prominently pronounceable non-words, so-called pseudowords, or unpronounceable non-words, such as consonant strings. While they are often used simply as foils, interesting research questions can be addressed by manipulating non-word characteristics. In addition, non-word characteristics will influence task difficulty (e.g., see Fig. 1 in [Balota & Chumbley, 1984](https://doi.org/10.1037/0096-1523.10.3.340)). For example, the task difficulty will be high if pseudowords are used as foils only, without non-lexical cues that participants can use to make a lexical decision. In contrast, when using consonant strings as foils, participants can rely only on a vowel detection strategy to solve the task, so task difficulty will be low. To this end, one should consider how difficult the task should be, given the study's central hypothesis, as the selection of the non-words will influence word processing. Typically, non-words are word-like and comparable to the words used in the actual study on the level of orthographic similarity and familiarity. 
+
+### Variables to consider for non-words
+There are numerous variables for which words and non-words in an experiment can be used to consider Wordlikeness. If non-words are very non-word-like (e.g., "XQRPT"), the task will be easy for the participants to make correct lexical decisions without lexically processing the word. There are different ways to quantify word-likeness, and they are likely to be correlated. When available, it is advisable to check for all of the measures. 
+
+- Consonant-vowel structure: Pseudowords that contain unusual consonant or vowel clusters should be avoided. One way to do this is to ensure that the CV structure is identical to the words used in the experiment.
+- N-gram frequency: The inclusion of (many) rare letters (e.g., "Q", "X") will make pseudowords less word-like. The same goes for multi-letter clusters such as bigrams or trigrams (e.g., the bigram "XQ" or trigram "XQA"). Information about n-gram frequency can be obtained from WordGen ([Duyck et al., 2004](https://doi.org/10.3758/BF03195595)). 
+- Orthographic Levenshtein Distance (OLD) 20 ([Yarkoni et al., 2008](https://doi.org/10.3758/PBR.15.5.971))
+- Morphological complexity: The morphological structure of words should match that of the words in the experiment. ADD RESOURCES
+- Visual-Orthographic characteristics like the orthographic prediction error ([Gagl et al., 2020](https://doi.org/10.1016/j.neuroimage.2020.116727), [Fu & Gagl, 2025](https://doi.org/10.1162/jocn_a_02301)) or Optimal Transport measures ([Taylor et al., 2025](http://doi.org/10.1101/2024.11.11.622929))
+
+### How to create pseudowords
+We recommend automating the process of pseudoword creation, especially if a large number of items are involved. There are numerous ways of doing this:
+
+- Pseudoword creators for German are available, such as [Wuggy](https://doi.org/10.3758/BRM.42.3.627) or [UniPseudo](https://journals.sagepub.com/doi/abs/10.1177/17470218231164373). 
+- Python is good for working with letter strings, and with medium-low programming skills, you can use it to create pseudowords:
+    - Change one vowel or exchange all vowels with consonants to a set of non-words that match the words in your experimental task. 
+    - From your basewords, exchange consonants for consonants and vowels for vowels with a certain probability
+    - From your basewords, exchanging bigrams or trigrams
+    - Instead of relying on basewords, you can depend on language statistics: Combine common bigrams from the language (e.g., based on the FILMS corpus). Specify the length of your desired pseudowords. Select a random letter and then add letters with probabilities matching the structure of the German language. 
+
+### What to avoid
+- As for words, pseudowords similar to slurs that may cause offense should be avoided, unless needed to address the research question.  
+- If non-words should be pronounceable (i.e., pseudowords), one should eliminate illegal letter clusters. 
+- Slang words and dialect: It is advisable to get a representative of your target population (e.g., teenagers, undergraduate students) to check for potential slang words.
+- Items are words in a language commonly spoken as a foreign language, such as English, French, or Italian.
