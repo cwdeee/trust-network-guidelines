@@ -112,7 +112,7 @@ There is an argument for excluding words with particularly low frequency, as the
 ##### Word length (letters, phonemes, syllables) 
 
 - There may be pragmatic reasons for excluding very long words (i.e., making sure they fit on the screen)
-- There may be physiological reasons for excluding very long words (i.e., making sure the word fits the size of the retina, thus restricting the need for eye movements; an Empirical length restriction estimate would be 7 or fewer letters; e.g., see [Kliegl et al., 2004](https://doi.org/10.1080/09541440340000213)
+- There may be physiological reasons for excluding very long words (i.e., making sure the word fits the size of the retina, thus restricting the need for eye movements; an Empirical length restriction estimate would be 7 or fewer letters (e.g., see [Kliegl et al., 2004](https://doi.org/10.1080/09541440340000213)).
 - One should be mindful that this may lead to a non-representative sample of words, such as a disproportionate exclusion of compound words and low-frequency words. 
 - Furthermore, there is no agreed-upon cut-off at which one would exclude words. 
 - Length covaries with many other variables, such as orthographic neighbourhood (long words have very few orthographic neighbours, if any). In selecting the length range, one should consider the extent to which length covaries with variables one is interested in.
@@ -137,8 +137,8 @@ There are numerous variables for which words and non-words in an experiment can 
 - Morphological complexity: The morphological structure of words should match that of the words in the experiment. ADD RESOURCES
 - Visual-Orthographic characteristics like the orthographic prediction error ([Gagl et al., 2020](https://doi.org/10.1016/j.neuroimage.2020.116727), [Fu & Gagl, 2025](https://doi.org/10.1162/jocn_a_02301)) or Optimal Transport measures ([Taylor et al., 2025](http://doi.org/10.1101/2024.11.11.622929))
 
-### How to create pseudowords
-We recommend automating the process of pseudoword creation, especially if a large number of items are involved. There are numerous ways of doing this:
+### How to create non-words
+We recommend automating the process of non-word creation, especially if a large number of items are involved. There are numerous ways of doing this:
 
 - Pseudoword creators for German are available, such as [Wuggy](https://doi.org/10.3758/BRM.42.3.627) or [UniPseudo](https://journals.sagepub.com/doi/abs/10.1177/17470218231164373). 
 - Python is good for working with letter strings, and with medium-low programming skills, you can use it to create pseudowords:
@@ -150,5 +150,21 @@ We recommend automating the process of pseudoword creation, especially if a larg
 ### What to avoid
 - As for words, pseudowords similar to slurs that may cause offense should be avoided, unless needed to address the research question.  
 - If non-words should be pronounceable (i.e., pseudowords), one should eliminate illegal letter clusters. 
-- Slang words and dialect: It is advisable to get a representative of your target population (e.g., teenagers, undergraduate students) to check for potential slang words.
+- Slang words and dialect: It is advisable to get a representative of your target population (e.g., teenagers, undergraduate students) to check for potential slang words).
 - Items are words in a language commonly spoken as a foreign language, such as English, French, or Italian.
+
+## How to determine the effect of a specific variable based on lexical decision data
+If we are interested in the effect of a given variable, we have several different paradigms available:
+
+- Orthogonal design: Select words and non-words so they vary maximally on the variable of interest while keeping the conditions comparable to all other variables listed above. Although it’s sometimes unavoidable to use such a design, there are some disadvantages:
+    - It often constrains the number of possible items, leading to small numbers.
+    - The selection of items that are not representative of the language or orthography. 
+    - Lack of methods to test if conditions are comparable (i.e., “matched”). Often, people use a t-test to show that, e.g., the two conditions don’t differ in word frequency, but this method has many problems. So we would advise against (i.e., t-tests cannot be used for equivalence testing, see [Lakens et al., 2018](https://doi.org/10.1177/2515245918770963); also infering the population mean is not what we want here; see [Sassenhagen & Alday, 2016](https://doi.org/10.1016/j.bandl.2016.08.001)). Here is a fundamental research gap, and more work needs to be done.  
+
+- Dichotomising of naturally continuous variables: If our variable of interest is continuous, we must make arbitrary decisions about what constitutes a “low” versus “high” value for assigning words to different conditions. This also prevents us from investigating non-linearity.
+- Decorrelated itemsets: You can select a number of items that vary on your variable of interest but have a small correlation with other variables ([Protopapas & Kapnoula, 2013](https://escholarship.org/uc/item/1f2883gp)). The advantages are the same as above, except for the last point. 
+- Large-scale study & bootstrapping ([Perry, 2022](https://doi.org/10.1177/1747021822108653)). 	
+- Regression analysis: This involves using confounding variables as regressors of no interest. Here, statistical methods like linear mixed effect models are advised as they can account for variance components on the level of the stimuli and participants simultaneously. 
+
+## Dialectic-specific considerations
+The German language has a wide range of dialects. However, as most people (predominantly undergraduate students) are exposed to Standard German regularly (e.g., at school, through movies and TV), and due to the high mobility within the German-speaking realm (especially among undergraduate students), we don’t recommend overthinking this in the context of a lexical decision task.
