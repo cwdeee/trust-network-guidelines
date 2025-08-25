@@ -163,7 +163,7 @@ If we are interested in the effect of a given variable, we have several differen
 
 - Dichotomising of naturally continuous variables: If our variable of interest is continuous, we must make arbitrary decisions about what constitutes a “low” versus “high” value for assigning words to different conditions. This also prevents us from investigating non-linearity.
 - Decorrelated itemsets: You can select a number of items that vary on your variable of interest but have a small correlation with other variables ([Protopapas & Kapnoula, 2013](https://escholarship.org/uc/item/1f2883gp)). The advantages are the same as above, except for the last point. 
-- Large-scale study & bootstrapping ([Perry, 2022](https://doi.org/10.1177/1747021822108653)). 	
+- Large-scale study & bootstrapping ([Perry, 2022](https://doi.org/10.1177/17470218221086533)). 	
 - Regression analysis: This involves using confounding variables as regressors of no interest. Here, statistical methods like linear mixed effect models are advised as they can account for variance components on the level of the stimuli and participants simultaneously. 
 
 ## Dialectic-specific considerations
