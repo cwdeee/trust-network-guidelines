@@ -19,3 +19,12 @@ Below are some recommended pre-processing options. Please note that they should 
 - Individual participant data quality check
     - For each participant, we can assess whether the response times for each trial correlate with the average response times for the same items across all other participants. The participant can be excluded if the correlation is low (e.g., below *r < 0.5*). 
     - Item-level removal: While some studies remove items with particularly low accuracy, this may create a systematic bias. We thus recommend against it.
+
+An important decision is whether one is interested in analysing response times or accuracy. In studies with adults, accuracy is generally high. For response time analyses, one excludes all trials with incorrect responses. However, if accuracy is low, this systematically excludes data for the more difficult items. 
+
+As a rule of thumb: 
+- If accuracy is above 90%, it is advisable to analyse reaction times only, as there will be ceiling effects in accuracy. 
+- If accuracy is below 70%, one analyzes accuracy only. 
+- If accuracy is between 70% and 90%, one analyzes both accuracy and response times and seeks to obtain converging evidence; if the results are discrepant, this needs to be addressed in the discussion section. 
+
+Note that there are model based analysis that allow the simultanous analysis of response times and accuracy at the same time (e.g., drift-diffusion modelling; [Ratcliff, & McKoon, 2008](https://doi.org/10.1162/neco.2008.12-06-420))
