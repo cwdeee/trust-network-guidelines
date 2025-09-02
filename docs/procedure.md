@@ -57,3 +57,20 @@ The study can estimate the participants’ vocabulary knowledge at the end of th
 
 ## Programming the experiment
 Several decisions have to be made when programming experiments. These relate to the task structure, the use of the response device, and data quality assurance. Typically, an experimental session consists of blocks of items, with each block consisting of trials, which refers to the sequence of events that the participant engages with. In the classical lexical decision task, a single word or non-word is presented in each trial.
+
+### Text encoding
+In principle, the text presentation is simple, but there can be nerve-wracking pitfalls. A special case for German is how text is encoded (i.e., the internal code for storing letter strings in the memory of the presenting computer). Some encodings do not allow the proper presentation of German-specific letters (e.g., umlauts *äöü* or the sharp s *ß*). We highly recommend checking the presentation setup specifically for words containing such letters. 
+
+We recommend *UTF-8* encoding, which can be defined on the file level or in the presentation software. This encoding usually works well. 
+
+### Trial structure
+A trial generally has the following structure:
+
+- Fixation cross
+    - Fixation-cross presentation is implemented to prepare the participant for the upcoming trial. This presentation prevents eye movements or attentional blinks that could increase response times.
+    - Typically used signs are “+”, “*” or “x”. These fixation crosses serve as a forward mask to the reading material, potentially influencing behavior. 
+    - Our suggested alternative is to use vertical and horizontal lines indicating the location of the stimulus, but without an overlap between bars and the word. 
+    - Suggested duration of fixation cross presentation: 500 ms
+- Letter string presentation
+    - Reaction time, a main measure of the task, is measured from when the item appears on the screen until the response occurs. 
+    - Letter strings are recommended to stay on screen until a response. Alternatively, one can have a specific hypothesis that would make a shorter presentation time reasonable. Also, one could show the stimulus for a fixed amount of time to incentivize participants to focus on the task, respond quickly, and avoid taking long breaks in the middle of a block. Here, presentation duration could range from 1500 ms to 5000 ms. For this case, pilot testing is advised to determine the typical range of response times for one’s specific stimuli.
