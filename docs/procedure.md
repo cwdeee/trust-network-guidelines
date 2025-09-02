@@ -28,3 +28,18 @@ Here is a nonexhaustive list of programs used by the group in recent years. Typi
 | Inquisit                           |        |                |                |  |                    |-->
 
 The performance of the systems/platforms should be checked regarding the timing of the stimulus presentation and the latency of the key press. Information on this can be found [here](https://doi.org/10.7717/peerj.9414) and [here](https://doi.org/10.3758/s13428-020-01501-5).
+
+## Participants
+The number of participants should be determined by a power calculation based on the size of the effect of interest (e.g., see Stevens & Brysbaert, 2018, doi: 10.5334/joc.10.).
+
+There are no fixed rules about inclusion criteria. If the aim is to minimise inter-individual differences and examine differences on the word (or pseudoword) level, criteria can maximise similarity between participants (e.g., age, level of education). Possible recruitment strategies could be a convenience sample (e.g., undergraduate students), online platforms, or snowball sampling.
+
+Unless it is relevant to the research question, we strongly recommend minimizing the number of additional questions. Every new bit of information reduces the anonymity, as identification based on the data should not be possible by law (i.e., GDPR rules). For example, if location, gender, and highest education are collected, identification in a rural region could be possible already. In addition, fewer questions reduce the testing time for participation. Such a questionnaire should be embedded at the beginning of the experiment. 
+
+We recommend asking for:
+
+- Language history
+- Age
+- Highest education
+- Although gender is often reported and even requested by reviewers, we consider it irrelevant, as there is no evidence of moderation of the cognitive processes underlying reading in German adult readers.
+
