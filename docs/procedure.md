@@ -14,12 +14,14 @@ The first step is to program the experiment: We want the experimental software t
 ### Possible platforms to run the experiment
 Here is a nonexhaustive list of programs used by the group in recent years. Typically, all solutions have a forum for customer support and examples available. Find more information at the webpages linked below. 
 
-| Program                            | Cost     | Programming skill | Online studies | 
+| Program                            | Cost     | Programming skill | Online hosting | 
 |------------------------------------|----------|-------------------|----------------|
-| [Psytoolkit](psytoolkit.org)        | Free     | Intermediate      | Yes           | 
+| [Psytoolkit](psytoolkit.org)       | Free     | Intermediate      | Yes            | 
 | PsychoPy (lab) / Pavlovia (online) | Possible | No                | Yes            |
+| [Pavlovia](https://pavlovia.org/) | Possible | No                | Yes            |
 | PsychJS                            | Free     | Yes               | Yes            |
-<!--| Gorilla                            |        |                |                |  |                    |
-| Inquisit                           |        |                |                |  |                    |-->
 | Open Sesame (lab) – OSWeb (online) | Free     | No                | Yes            |
 | EyeLink Experiment Builder         | Licenced | No                | No             |
+
+<!--| Gorilla                            |        |                |                |  |                    |
+| Inquisit                           |        |                |                |  |                    |-->
