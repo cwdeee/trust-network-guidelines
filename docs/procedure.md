@@ -14,15 +14,17 @@ The first step is to program the experiment: We want the experimental software t
 ### Possible platforms to run the experiment
 Here is a nonexhaustive list of programs used by the group in recent years. Typically, all solutions have a forum for customer support and examples available. Find more information at the webpages linked below. 
 
-| Program                            | Cost     | Programming skill | Online hosting | 
-|------------------------------------|----------|-------------------|----------------|
-| [Psytoolkit](https://www.psytoolkit.org)       | Free     | Intermediate      | Platform            | 
-| [PsychoPy](https://www.psychopy.org/) | Free | No                | Self            |
-| [Pavlovia](https://pavlovia.org/) | Yes | No                | Platform            |
-| [PsychJS](https://www.jspsych.org/v7/)                            | Free     | Yes               | Self            |
-| [Open Sesame](https://osdoc.cogsci.nl/) | Free     | No                | Self            |
-| [Open Sesame Online (OSWeb)](https://osdoc.cogsci.nl/3.3/manual/osweb/osweb/) | Free     | No                | Platform            |
-| [EyeLink Experiment Builder](https://www.sr-research.com/experiment-builder/)         | Licenced | No                | No             |
+| Program                                                                       | Cost     | Programming skill | Online hosting | 
+|-------------------------------------------------------------------------------|----------|-------------------|----------------|
+| [Psytoolkit](https://www.psytoolkit.org)                                      | Free     | Intermediate      | Platform       | 
+| [PsychoPy](https://www.psychopy.org/)                                         | Free     | No                | Self           |
+| [Pavlovia](https://pavlovia.org/)                                             | Yes      | No                | Platform       |
+| [PsychJS](https://www.jspsych.org/v7/)                                        | Free     | Yes               | Self           |
+| [Open Sesame](https://osdoc.cogsci.nl/)                                       | Free     | No                | Self           |
+| [Open Sesame Online (OSWeb)](https://osdoc.cogsci.nl/3.3/manual/osweb/osweb/) | Free     | No                | Platform       |
+| [EyeLink Experiment Builder](https://www.sr-research.com/experiment-builder/) | Licenced | No                | No             |
 
 <!--| Gorilla                            |        |                |                |  |                    |
 | Inquisit                           |        |                |                |  |                    |-->
+
+The performance of the systems/platforms should be checked regarding the timing of the stimulus presentation and the latency of the key press. Information on this can be found [here](https://doi.org/10.7717/peerj.9414) and [here](https://doi.org/10.3758/s13428-020-01501-5).
