@@ -1,0 +1,4 @@
+Before addressing the research question of interest, pre-processing is needed to exclude responses that may not reflect the cognitive processes and thus decrease the signal-to-noise ratio. 
+
+## Preprocessing
+We recommend keeping the pre-processing to a minimum, to avoid systematic bias in excluding potentially meaningful datapoints and maximise the number of observations. As there are many different rules of thumb, we suggest either minimising the amount of pre-processing (e.g., when the amount of data is limited) or conducting a robustness analysis, where the results are verified with a set of different pre-processing methods (e.g., when there is a large amount of data available; see [Short et al. 2025](https://doi.org/10.31222/osf.io/4yzeh_v1)). 
