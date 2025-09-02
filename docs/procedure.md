@@ -30,7 +30,7 @@ Here is a nonexhaustive list of programs used by the group in recent years. Typi
 The performance of the systems/platforms should be checked regarding the timing of the stimulus presentation and the latency of the key press. Information on this can be found [here](https://doi.org/10.7717/peerj.9414) and [here](https://doi.org/10.3758/s13428-020-01501-5).
 
 ## Participants
-The number of participants should be determined by a power calculation based on the size of the effect of interest (e.g., see [Brysbaert & Stevens, 2018](https://doi.org/10.5334/joc.10)).
+The number of participants should be determined by a power calculation based on the size of the effect of interest (e.g., see [Brysbaert & Stevens, 2018](https://doi.org/10.5334/joc.10)). Note there are differences in power considerations when investigating individual differences (e.g., see [Hedge et al. (2018)](https://doi.org/10.3758/s13428-017-0935-1))
 
 There are no fixed rules about inclusion criteria. If the aim is to minimise inter-individual differences and examine differences on the word (or pseudoword) level, criteria can maximise similarity between participants (e.g., age, level of education). Possible recruitment strategies could be a convenience sample (e.g., undergraduate students), online platforms, or snowball sampling.
 
@@ -43,3 +43,7 @@ We recommend asking for:
 - Highest education
 - Although gender is often reported and even requested by reviewers, we consider it irrelevant, as there is no evidence of moderation of the cognitive processes underlying reading in German adult readers.
 
+## Design options
+
+### Controlled experiment
+With a small number of available participants and strong theoretical motivation, a controlled experiment is feasible. Here, participants respond to several items selected to vary on a specific characteristic, while not co-varying on other characteristics that may also affect reading processes (see relevant [“Materials” section]()). The design of a lexical decision task relies on the trade-off between available time and data quality. On the one hand, as the length of the experiment increases, the likelihood of participant drop-out increases. On the other hand, a short study with only a couple of items is less likely to provide high data quality. Considering time, assuming that a typical reading adult can finish a 30-minute task is reasonable. Such a task length may be suitable for 500 decisions (i.e., 250 words and 250 pseudowords), including pre-stimulus and post-response delays and pauses between blocks. 
