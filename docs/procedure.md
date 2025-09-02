@@ -30,7 +30,7 @@ Here is a nonexhaustive list of programs used by the group in recent years. Typi
 The performance of the systems/platforms should be checked regarding the timing of the stimulus presentation and the latency of the key press. Information on this can be found [here](https://doi.org/10.7717/peerj.9414) and [here](https://doi.org/10.3758/s13428-020-01501-5).
 
 ## Participants
-The number of participants should be determined by a power calculation based on the size of the effect of interest (e.g., see Stevens & Brysbaert, 2018, doi: 10.5334/joc.10.).
+The number of participants should be determined by a power calculation based on the size of the effect of interest (e.g., see [Brysbaert & Stevens, 2018](https://doi.org/10.5334/joc.10)).
 
 There are no fixed rules about inclusion criteria. If the aim is to minimise inter-individual differences and examine differences on the word (or pseudoword) level, criteria can maximise similarity between participants (e.g., age, level of education). Possible recruitment strategies could be a convenience sample (e.g., undergraduate students), online platforms, or snowball sampling.
 
