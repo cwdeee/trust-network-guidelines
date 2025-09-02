@@ -16,12 +16,13 @@ Here is a nonexhaustive list of programs used by the group in recent years. Typi
 
 | Program                            | Cost     | Programming skill | Online hosting | 
 |------------------------------------|----------|-------------------|----------------|
-| [Psytoolkit](psytoolkit.org)       | Free     | Intermediate      | Yes            | 
-| PsychoPy (lab) / Pavlovia (online) | Possible | No                | Yes            |
-| [Pavlovia](https://pavlovia.org/) | Possible | No                | Yes            |
-| PsychJS                            | Free     | Yes               | Yes            |
-| Open Sesame (lab) – OSWeb (online) | Free     | No                | Yes            |
-| EyeLink Experiment Builder         | Licenced | No                | No             |
+| [Psytoolkit](https://www.psytoolkit.org)       | Free     | Intermediate      | Platform            | 
+| [PsychoPy](https://www.psychopy.org/) | Free | No                | Self            |
+| [Pavlovia](https://pavlovia.org/) | Yes | No                | Platform            |
+| [PsychJS](https://www.jspsych.org/v7/)                            | Free     | Yes               | Self            |
+| [Open Sesame](https://osdoc.cogsci.nl/) | Free     | No                | Self            |
+| [Open Sesame Online (OSWeb)](https://osdoc.cogsci.nl/3.3/manual/osweb/osweb/) | Free     | No                | Platform            |
+| [EyeLink Experiment Builder](https://www.sr-research.com/experiment-builder/)         | Licenced | No                | No             |
 
 <!--| Gorilla                            |        |                |                |  |                    |
 | Inquisit                           |        |                |                |  |                    |-->
