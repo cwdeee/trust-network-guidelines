@@ -71,6 +71,17 @@ A trial generally has the following structure:
     - Typically used signs are “+”, “*” or “x”. These fixation crosses serve as a forward mask to the reading material, potentially influencing behavior. 
     - Our suggested alternative is to use vertical and horizontal lines indicating the location of the stimulus, but without an overlap between bars and the word. 
     - Suggested duration of fixation cross presentation: 500 ms
+
 - Letter string presentation
     - Reaction time, a main measure of the task, is measured from when the item appears on the screen until the response occurs. 
-    - Letter strings are recommended to stay on screen until a response. Alternatively, one can have a specific hypothesis that would make a shorter presentation time reasonable. Also, one could show the stimulus for a fixed amount of time to incentivize participants to focus on the task, respond quickly, and avoid taking long breaks in the middle of a block. Here, presentation duration could range from 1500 ms to 5000 ms. For this case, pilot testing is advised to determine the typical range of response times for one’s specific stimuli.
+    - Letter strings are recommended to stay on screen until a response. Alternatively, one can have a specific hypothesis that would make a shorter presentation time reasonable. Also, one could show the stimulus for a fixed amount of time to incentivize participants to focus on the task, respond quickly, and avoid taking long breaks in the middle of a block. Here, presentation duration could range from 1500 ms to 5000 ms. For this case, pilot testing is advised to determine the typical range of response times for one’s specific stimulus set.
+    - The letter strings should be presented in a different random order for each participant.
+
+- Particiant response 
+    - Typically, participants are instructed to respond by pressing on a keyboard, e.g., Left key: “d”, right key: “k”
+    - Suppose the aim is to directly compare words and non-words (i.e., the so-called lexicality effect). In that case, it is recommended to counterbalance the response key between participants, such that half of them will press the left key for words and the right key for pseudowords, and the other half the other way around.
+    - If the number of words and non-words is counterbalanced, it is typical to instruct participants to press the Right key for words and the Left key for non-words.
+    - Alternatives to keyboard responses exist, such as keypads, touchscreens, or mouse clicks. Earlier tests have demonstrated that the temporal resolution of the devices may vary greatly, from milliseconds to a jitter of 30-40 ms (XXX). 
+    - Inter-stimulus interval: A break before the next stimulus will reduce interference effects. We recommend a blank screen inter-trial interval of 500 ms between the response and the next fixation cross.
+
+After 100 trials, we recommend a short, self-paced break (“Press the space bar when you’re ready to continue”). 
