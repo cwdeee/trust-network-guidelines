@@ -21,4 +21,5 @@ extra_css:
 nav:
   - Home: index.md
   - Materials: materials.md
+  - Procedure: procedure.md
   - About: about.md
