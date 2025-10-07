@@ -23,6 +23,7 @@ Below are some recommended pre-processing options. Please note that they should 
 An important decision is whether one is interested in analysing response times or accuracy. In studies with adults, accuracy is generally high. For response time analyses, one excludes all trials with incorrect responses. However, if accuracy is low, this systematically excludes data for the more difficult items. 
 
 As a rule of thumb: 
+
 - If accuracy is above 90%, it is advisable to analyse reaction times only, as there will be ceiling effects in accuracy. 
 - If accuracy is below 70%, one analyzes accuracy only. 
 - If accuracy is between 70% and 90%, one analyzes both accuracy and response times and seeks to obtain converging evidence; if the results are discrepant, this needs to be addressed in the discussion section. 
@@ -33,8 +34,20 @@ Note that there are model based analysis that allow the simultanous analysis of 
 Reaction time data generally has an exponentially modified Gaussian (Ex-Gaussian) distribution, which looks like a bell-shaped curve with a right skew. As most frequentist analysis methods assume a normal distribution, one can choose between transforming the data or using a model that assumes an Ex-Gaussian distribution.
 
 Possible transformations include:
+
 - Log-RT: In R-code logRT <- log(RT)
 - Inverse RT: invRT <- 1/RT. Note that this gives you a reading rate in Herz (assuming that the RT is seconds, not smaller or larger units) rather than speed, such that small numbers correspond to larger RTs (i.e., 1 Herz would transform to one word per second; i.e., a 1-second RT; see [Gagl et al., 2022](https://doi.org/10.1038/s41562-021-01215-4). Note that sometimes the RT values are multiplied by -1, so smaller values correspond to faster response times. 
 - Z-transformations: For each participant, subtract the mean from the trial RT and divide by the participant's standard deviation. This transformation  will remove any between-participant variability, which is an issue when it is a matter of investigation, but is advantageous if one wants to avoid the problems with over-additivity ([Faust et al., 1999](https://doi.org/10.1037/0033-2909.125.6.777))
 
 If one wants to model the Ex-Gaussian explicitly, it is possible with Bayesian methods (e.g., as implemented in the [brm package in R](https://github.com/paul-buerkner/brms)). 
+
+
+## Statistics 
+### Sanity check analysis
+Some effects are well-established and can serve as a sanity check to ensure good data quality. We expect long items to be responded to more slowly than short items, and pseudowords more slowly than words; there should also be an interaction between these, with a more substantial length effect for pseudowords than words (e.g., [Weekes, 1997](https://doi.org/10.1080/713755710)). 
+If the main effects and interaction are not present, one should troubleshoot the following: 
+
+- The data export process (e.g., is it possible that some columns in a spreadsheet were sorted while the others were not) 
+- The design of the experiment (are the reaction times recorded as the number of seconds/milliseconds between stimulus onset and response?) 
+- The participant responses (do they provide atypically short or long responses, potentially suggesting low engagement with the task; e.g., if a participants wants that the experiment ends fast the best strategy would be to do a reaction time task where one presses a button irrespective of stimulus quality as fast as possible, ignoring that the instruction would be also to do the task correctly).  
+
