@@ -28,3 +28,13 @@ As a rule of thumb:
 - If accuracy is between 70% and 90%, one analyzes both accuracy and response times and seeks to obtain converging evidence; if the results are discrepant, this needs to be addressed in the discussion section. 
 
 Note that there are model based analysis that allow the simultanous analysis of response times and accuracy at the same time (e.g., drift-diffusion modelling; [Ratcliff, & McKoon, 2008](https://doi.org/10.1162/neco.2008.12-06-420))
+
+##  Data transformation
+Reaction time data generally has an exponentially modified Gaussian (Ex-Gaussian) distribution, which looks like a bell-shaped curve with a right skew. As most frequentist analysis methods assume a normal distribution, one can choose between transforming the data or using a model that assumes an Ex-Gaussian distribution.
+
+Possible transformations include:
+- Log-RT: In R-code logRT <- log(RT)
+- Inverse RT: invRT <- 1/RT. Note that this gives you a reading rate in Herz (assuming that the RT is seconds, not smaller or larger units) rather than speed, such that small numbers correspond to larger RTs (i.e., 1 Herz would transform to one word per second; i.e., a 1-second RT; see [Gagl et al., 2022](https://doi.org/10.1038/s41562-021-01215-4). Note that sometimes the RT values are multiplied by -1, so smaller values correspond to faster response times. 
+- Z-transformations: For each participant, subtract the mean from the trial RT and divide by the participant's standard deviation. This transformation  will remove any between-participant variability, which is an issue when it is a matter of investigation, but is advantageous if one wants to avoid the problems with over-additivity ([Faust et al., 1999](https://doi.org/10.1037/0033-2909.125.6.777))
+
+If one wants to model the Ex-Gaussian explicitly, it is possible with Bayesian methods (e.g., as implemented in the [brm package in R](https://github.com/paul-buerkner/brms)). 
