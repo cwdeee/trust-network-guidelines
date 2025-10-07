@@ -63,12 +63,16 @@ If the main effects and interaction are not present, one should troubleshoot the
 
 ### Inference and reporting
 Depending on your research question and preferences, you can either assess the significance of effects of interests or quantify the size of these effects (including whether the estimate is likely zero). 
+
 - Frequentist significance testing: This is the most common approach. 
+
     - If you fit the model with the R packages lme4 to estimate effect sizes and model fits. If needed, one can use a package like lmerTest to provide p-values for each fixed effect and interaction in the model. 
     - We recommend reporting the unstandardised model effect size estimate (slope), standard error of the estimate, and t- and p-values. 
     - For pre-registered a priori hypotheses, we recommend an alpha-level of 0.05 to determine significance. In the case of exploratory or post-hoc analyses, one should apply a Bonferroni correction (see [von der Malsburg & Angele, 2017](https://doi.org/10.1016/j.jml.2016.10.003)).
     - Frequentist effect size estimation: To interpret the effect size and its estimated accuracy, one can report the effect size estimate and its 95% confidence interval (see [Cumming, 2013](https://doi.org/10.1177/095679761350496)). The package nlme provides 95% confidence intervals for main effects and interactions in mixed-effect models.
-- Bayesian statistical tests: Instead of frequentist p-values, one can rely on Bayes Factors for inference (e.g., [Schmalz et al., 2023](https://doi.org/10.1037/met0000421)). 
+
+- Bayesian statistical tests: Instead of frequentist p-values, one can rely on Bayes Factors for inference (e.g., [Schmalz et al., 2023](https://doi.org/10.1037/met0000421)).
+
     - In R, you can use the package BayesFactor to calculate Bayes Factors for specific effects in linear mixed-effect models.
     - Here, one compares a model with an effect or interaction of interest to one that excludes this particular effect or interaction. The Bayes Factor is a ratio that quantifies the extent to which the data is more compatible with the model in the numerator than the denominator.
     - Large values support the model in the numerator and small values support the model in the denominator.
@@ -76,3 +80,13 @@ Depending on your research question and preferences, you can either assess the s
     - For more straightforward interpretability, we recommend placing the more complex model in the numerator, so that increasingly small values (< 1) correspond to evidence for the null model and increasingly large values (>1) correspond to evidence for the alternative model.
     - We recommend a continuous interpretation of the Bayes Factor rather than a "trichotomisation".
     - Bayesian effect size estimation: Unlike the Frequentist approach, which relies on the observed data only, Bayesian effect size estimation considers prior knowledge, which can take the form of existing data. See Bürkner, 2017 (10.18637/jss.v080.i01) for a tutorial.
+
+### Additional possibilities for analysis
+Monte-carlo simulated experiments for a priori or post hoc measurements.
+Existing large-scale datasets (i.e., lexicon projects like the [British Lexicon Project](https://doi.org/10.3758/s13428-011-0118-4)) allow subsampling experiments that enable running experiments with specific sample sizes and stimulus material to investigate effects (see [Kupermann, 2015](https://doi.org/10.1080/17470218.2014.989865), [Perry, 2024](https://doi.org/10.1371/journal.pone.0296874) for examples)
+
+Beyond measuring an effect or phenomenon typically means implementing completely different inference methods. Commonly, one would like to predict future events based on current data (i.e., the prediction approach) or explain the causal structure of a phenomenon/effect to understand reading better (see [Hofman et al. 2021](https://doi.org/10.1038/s41586-021-03659-0) for a perspective). 
+
+- Explanation focused (neuro)-cognitive models, one would use model simulations a priori to specify hypotheses potentially leading to model comparison leading to inference over models (e.g., [Perry et al., 2007](https://doi.org/10.1037/0033-295X.114.2.273) or [Gagl et al., 2025](https://doi.org/10.1101/2024.06.25.600635); see [Norris, 2013](https://doi.org/10.1016/j.tics.2013.08.003) for a review)
+    
+    - Another interesting case here is the drift diffusion model ([Ratcliff et al., 2004](https://doi.org/10.1037/0033-295X.111.1.159)) that allows for modeling both reaction times and accuracy data at the same time. Also, the model's output can be interpreted as the effect estimated on assumed processes like the drift rate (i.e., reflecting evidence accumulation before a decision is implemented). Note that the model can cope with exponential Gaussian response time distributions. 
