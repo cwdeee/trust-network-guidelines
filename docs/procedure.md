@@ -81,7 +81,7 @@ A trial generally has the following structure:
     - Typically, participants are instructed to respond by pressing on a keyboard, e.g., Left key: “d”, right key: “k”
     - Suppose the aim is to directly compare words and non-words (i.e., the so-called lexicality effect). In that case, it is recommended to counterbalance the response key between participants, such that half of them will press the left key for words and the right key for pseudowords, and the other half the other way around.
     - If the number of words and non-words is counterbalanced, it is typical to instruct participants to press the Right key for words and the Left key for non-words.
-    - Alternatives to keyboard responses exist, such as keypads, touchscreens, or mouse clicks. Earlier tests have demonstrated that the temporal resolution of the devices may vary greatly, from milliseconds to a jitter of 30-40 ms (XXX). 
+    - Alternatives to keyboard responses exist, such as keypads, touchscreens, or mouse clicks. For more information see [Pronk et al., 2020](https://doi.org/10.3758/s13428-019-01321-2), [Bridges et al., 2020](https://doi.org/10.7717/peerj.9414) or [Rodd, 2024](https://doi.org/10.1016/j.jml.2023.104472) for more information. 
     - Inter-stimulus interval: A break before the next stimulus will reduce interference effects. We recommend a blank screen inter-trial interval of 500 ms between the response and the next fixation cross.
 
 After 100 trials, we recommend a short, self-paced break (“Press the space bar when you’re ready to continue”). 
