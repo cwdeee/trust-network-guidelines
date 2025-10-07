@@ -90,3 +90,10 @@ Beyond measuring an effect or phenomenon typically means implementing completely
 - Explanation focused (neuro)-cognitive models, one would use model simulations a priori to specify hypotheses potentially leading to model comparison leading to inference over models (e.g., [Perry et al., 2007](https://doi.org/10.1037/0033-295X.114.2.273) or [Gagl et al., 2025](https://doi.org/10.1101/2024.06.25.600635); see [Norris, 2013](https://doi.org/10.1016/j.tics.2013.08.003) for a review)
     
     - Another interesting case here is the drift diffusion model ([Ratcliff et al., 2004](https://doi.org/10.1037/0033-295X.111.1.159)) that allows for modeling both reaction times and accuracy data at the same time. Also, the model's output can be interpreted as the effect estimated on assumed processes like the drift rate (i.e., reflecting evidence accumulation before a decision is implemented). Note that the model can cope with exponential Gaussian response time distributions. 
+
+
+- Prediction-focused learning models (e.g., Machine learning methods) can be used for many things:
+
+    - Explainations based on archetectual constraints (i.e., compare [Linke et al., 2017](https://doi.org/10.1371/journal.pone.0183876) vs. [Hannagan et al., 2014](https://doi.org/10.1371/journal.pone.0084843)) or through implementation of different training regimes ([Hannagan et al., 2022](https://doi.org/10.1073/pnas.2104779118)) or the investigation of neuro-cognitive processes related to reading ([Rajalingham et al., 2020](https://doi.org/10.1038/s41467-020-17714-3); but see model comparisons can be applied to infer over-prediction and explanation focused models [Pauli et al., 2025](https://doi.org/10.1101/2025.05.16.654419)).
+    - Investigating memory structure (e.g., [Trautwein et al., 2018](https://doi.org/10.3389/fpsyg.2018.02252) or [Gatti et al., 2023](https://doi.org/10.1037/xge0001304))
+    - Diagnostics (e.g., [Gregorova et al., 2024](https://doi.org/10.1038/s41539-024-00237-7); but see [Ziegler et al., 2020](https://doi.org/10.1177/0956797618823540) for an approach using a explaination focused model)
