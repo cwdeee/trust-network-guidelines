@@ -73,3 +73,27 @@ Reporting the research process transparently will allow others to reproduce the 
 - “Macro” procedure
 
     - Order of events: entering the lab, information about the study, experiment, debrief, payment, etc.
+
+## Results & Analysis
+
+- Data & code
+
+    - Share the raw trial-level data and code with necessary information: Item, anonymised participant ID, accuracy, reaction time, trial order, and central metadata: Relevant item and participant characteristics. Here, one can review the dataset description provided in the [BIDS specifications for guidance](https://bids-specification--1128.org.readthedocs.build/en/1128/modality-agnostic-files/dataset-description.html).
+    - Analysis script, including libraries used & versions as supplementary materials
+    - Report in the manuscript what software and libraries were used, if possible - for example, share a containerized environment (e.g., Docker or better Podman files) for reproducing the computing environment, in case libraries differ between operating systems and computer architectures.
+    - Record who wrote what code (e.g., standardised file headers, a separate document containing this metadata; specify in CRedIT)
+    - Comment code well to increase readability and understanding.
+    - Use relative rather than absolute paths.
+    - Report and provide implemented data cleaning/preprocessing pipelines.
+    - Give summary statistics of lost trials, items, participants, etc., from each criterion applied.
+    - Justify whatever decisions are made in data cleaning
+    - If one implements a multiverse/robustness analysis to decide on rules for data cleaning, one should report this and share the code to reproduce it.
+
+- Data analysis
+
+    - Give descriptives that make sense for the data, in terms of central tendency and dispersion/spread.
+    - Visualise only if this helps communicate (e.g., complex interactive effects)
+    - Explicate the criteria on which a decision for one modelling approach or another was made
+    - Describe the model structure (e.g., fixed, random effects, distributional parameters, etc.) and the software used to fit it
+    - If a model takes a long time to fit, share the output (e.g., share a .rds file for a Bayesian model if it takes more than a couple of hours to fit)
+    - Describe & justify model diagnostics. For example, report model comparisons used to determine which variables were included in the model (both fixed & random effects). If there is a justification for a certain model diagnostic, then report it.	
