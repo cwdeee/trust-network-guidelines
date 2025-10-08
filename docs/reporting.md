@@ -97,3 +97,45 @@ Reporting the research process transparently will allow others to reproduce the 
     - Describe the model structure (e.g., fixed, random effects, distributional parameters, etc.) and the software used to fit it
     - If a model takes a long time to fit, share the output (e.g., share a .rds file for a Bayesian model if it takes more than a couple of hours to fit)
     - Describe & justify model diagnostics. For example, report model comparisons used to determine which variables were included in the model (both fixed & random effects). If there is a justification for a certain model diagnostic, then report it.	
+
+## Data Storage
+
+- Repositories & Platforms
+
+    - Use a platform that allows for long-term/perpetual storage, and permanent identifiers (e.g., Digital Object Identifier, DOI), and make this clear with links directly from the paper, e.g., in a Data Availability statement.
+    - Recommendations for specific platforms: choose the platform according to regulations (e.g., GDPR) that apply in your locale
+    - Decentralise data storage by providing back-ups. Still provide one repository, but link to mirrors in the README.
+    - Be aware of any conflicts between the data requirements of different countries.
+
+- Specific Platforms 
+
+    - [ZPID](https://leibniz-psychology.org/en/products/archiving/publication) University Trier, Germany
+    - [GIN](https://gin.g-node.org/) LMU, München, Germany
+    - [NFDI](https://www.nfdi.de/?lang=en) Germany
+    - [OSF](https://www.cos.io/) US 
+    - [GitHub](https://github.com/about) San Francisco, US
+    - Note that non-European platforms can be problematic for data security reasons, such that at least storage in the EU is highly recommended.
+
+- Sensitive Personal Information & Data Protection
+
+    - Here we strongly advise to consult with an ethics committee (either local or [at the German Society of Psychology, DFG](https://www.dgps.de/serviceangebote/ethikkommission)) 
+
+- Documentation recommendations
+
+    - Data dictionary: must be used for the raw data (see [Example here](https://cghlewis.com/blog/data_dictionary/))
+    - We recommend sharing the data in BIDS or similar structured formats, which have a specification for behavioural data ([see here](https://bids-specification.readthedocs.io/en/stable/modality-specific-files/behavioral-experiments.html))
+    - Informative READMEs should be included to provide important context or information relevant for any data users to know, which is not necessarily apparent from the data and metadata.
+
+- Sharing Metadata and Protocols
+
+    - Consider sharing protocols like ethics, lab-specific protocols/lab routines.
+
+- Copyright & licenses
+
+    - Any shared materials should be checked for copyright and license restrictions – e.g., corpora & published texts, font files, image/video / sound stimuli, code.
+    - We recommend that people look into the [consequences of different open licenses](https://www.psycharchives.org/en/about#rights)
+ 
+## Manuscripts / Publications
+
+- We recommend posting preprints to a server like PsyArXiv before the first submission; if that is not possible, image resources can be shared openly with DOIs such that the author retains rights to use the illustrations.
+- We recommend publishing the article as Open Access if possible. 
