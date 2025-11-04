@@ -19,7 +19,7 @@ Reporting the research process transparently will allow others to reproduce the 
     - Variable(s) of interest, along with rationale (if applicable)
     - The corpus used for word selection
     - Non-word generation process (with code as a supplement, if applicable)
-    - Selection criteria for words and non-words(with code as a supplement, if applicable)
+    - Selection criteria for words and non-words (with code as a supplement, if applicable)
     - Specification of how word- and non-word-level characteristics were determined (with code as a supplement) 
     - A table with all item characteristics as part of the appendix or supplementary materials. 
     - A table with the mean values for each characteristic for words and non-words

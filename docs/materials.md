@@ -6,7 +6,7 @@ One should select Words from Corpora. The field of corpus linguistics provides t
 
 
 ### Corpora to Consider
-Conducting a lexical decision experiment in German requires relying on existing resources. Many resources are freely available, and others require a university account. Generally, corpora differ in size and register. A small corpus may provide inaccurate frequency estimates, especially for low-frequency words ([more details](https://doi.org/10.1037/0096-3445.113.2.256)). Register refers to the population sampled in the corpus. For example, the words in a child-book corpus differ from those in an adult newspaper corpus. Further, we can distinguish between written, spoken, subtitle and internet corpora as well as ways to generate specific corpora. Below, we present a non-exhaustive list of German resources that the members of the group recommend. To ensure word status, we highly recommended checking multiple corpora to account for potential miss spellings that happen regularly. 
+Conducting a lexical decision experiment in German requires relying on existing resources. Many resources are freely available, and others require a university account. Generally, corpora differ in size and register. A small corpus may provide inaccurate frequency estimates, especially for low-frequency words ([more details](https://doi.org/10.1037/0096-3445.113.2.256)). Register refers to the population sampled in the corpus. For example, the words in a child-book corpus differ from those in an adult newspaper corpus. Further, we can distinguish between written, spoken, subtitle and internet corpora as well as ways to generate specific corpora. Below, we present a non-exhaustive list of German resources that the members of the group recommend. To ensure word status, we highly recommended checking multiple corpora to account for potential misspellings that happen regularly. 
 
 
 We provide links in the following.
@@ -54,7 +54,7 @@ Here are new ideas for creating corpora with generative language models ([more d
 
 ### Variables to consider 
 
-Words vary in terms of orthographic features (e.g., number of letters, written word form frequency), phonological features (e.g., number of syllables, number of phonemes), morphological features (e.g., morphological complexity, number of morphemes), syntactical features (e.g., Part of Speech) and semantic features (e.g., word class, valence). There are no hard rules about what items should be excluded when selecting items. Manual filtering is not recommended, as it’s time-consuming and error-prone. The filtering process depends on the research question.
+Words vary in terms of orthographic features (e.g., number of letters, written word form frequency), phonological features (e.g., number of syllables, number of phonemes), morphological features (e.g., morphological complexity, number of morphemes), syntactical features (e.g., Part of Speech) and semantic features (e.g., word class, valence). There are no strict rules for which items to exclude when selecting words/non-words for a study. Manual filtering is not recommended, as it’s time-consuming and error-prone. The filtering process depends on the research question.
 
 #### Exclusion of Taboo Words ![Importance Rating 2](images/rating2.png)
 Excluding taboo words can prevent participant traumatization. Thus, such words should only be used if necessary, and experiments involving them should account for measures that prevent adverse outcomes for participants. In general, it is advised to consult with an ethics committee. It is recommended to exclude slurs that some participants may perceive to be personally offensive and to include a trigger warning if such words are under investigation. [Sulpizio et al. (2024)](https://doi.org/10.3758/s13428-024-02376-6) provide a full list of German taboo words as supplementary materials.
@@ -77,7 +77,7 @@ A specialty of German is the use of compound words (e.g., “Kühlschrank”, wh
 Excluding certain parts of speech (e.g., function words) can simplify the selection process. However, it may also reduce the language's representativeness.
 
 #### Lemmatization
-Lemmatization involves using lemmas (base forms of words) instead of individual word forms. 
+Lemmatization involves using lemmas (i.e., base forms of words; typically found in dictionaries) instead of individual word forms. 
 
 Pros:
 
@@ -120,7 +120,7 @@ There is an argument for excluding words with particularly low frequency, as the
 
 ##### Orthographic similarity/familiarity 
 
-- There are may ways to measure orthographic similarity/familiarity of a word and non-words in contrast to an assumption of a memory storing lexcial itmes (i.e., learned words)
+- There are many ways to measure orthographic similarity/familiarity of a word and non-words in contrast to an assumption of a memory storing lexcial itmes (i.e., learned words)
 - Classical measures of letter string familiarity would be bi-, tri- or quadri-gram frequency measures that capture the familiarity of the substrings of any letter string.
 - Classical measures of letter string similarity would be orthographic neighborhood size (i.e., there is also a phoneme level version), orthographic Levenshtein distance or similar. 
 - More recently, neuro-cognitively motivated measures as the orthographic prediction error representations have been established, with a central advantage as the measure similarity without a confound in familiarity. 
@@ -134,7 +134,7 @@ There are numerous variables for which words and non-words in an experiment can 
 - Consonant-vowel structure: Pseudowords that contain unusual consonant or vowel clusters should be avoided. One way to do this is to ensure that the CV structure is identical to the words used in the experiment.
 - N-gram frequency: The inclusion of (many) rare letters (e.g., "Q", "X") will make pseudowords less word-like. The same goes for multi-letter clusters such as bigrams or trigrams (e.g., the bigram "XQ" or trigram "XQA"). Information about n-gram frequency can be obtained from WordGen ([Duyck et al., 2004](https://doi.org/10.3758/BF03195595)). 
 - Orthographic Levenshtein Distance (OLD) 20 ([Yarkoni et al., 2008](https://doi.org/10.3758/PBR.15.5.971))
-- Morphological complexity: The morphological structure of words should match that of the words in the experiment. ADD RESOURCES
+- Morphological complexity: The morphological structure of words should match that of the words in the experiment.
 - Visual-Orthographic characteristics like the orthographic prediction error ([Gagl et al., 2020](https://doi.org/10.1016/j.neuroimage.2020.116727), [Fu & Gagl, 2025](https://doi.org/10.1162/jocn_a_02301)) or Optimal Transport measures ([Taylor et al., 2025](http://doi.org/10.1101/2024.11.11.622929))
 
 ### How to create non-words
