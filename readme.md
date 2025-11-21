@@ -1,1 +1,1 @@
-# Trust Network Guidelines
+# TRUST Network Guidelines
