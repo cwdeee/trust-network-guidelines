@@ -35,27 +35,28 @@ Texts collected from newspapers and books.
     - Separate frequency counts for different ages (between 6 and 12), Contains annotation about word class, lemma, orthographic neighbourhood, bigram frequencies, etc.
 
 
-#### Spoken Corpora 
+#### Spoken Corpora, TCR: ![Importance Rating 2](images/rating4.png)
 [Here](https://dgd.ids-mannheim.de/dgd/pragdb.dgd_extern.sys_inv?v_session_id=) one can find a list of German corpora of spoken language with diverse Registers and Sizes (Sign up necessary) constantly updated by the Institute of the German Language in Manheim. 
 
-#### Subtitle Corpora 
+#### Subtitle Corpora, TCR: ![Importance Rating 2](images/rating4.png)
 Texts that have been used as movie/TV series subtitles. They represent spoken language after a script but provide written word forms. 
 
-- [SubtLex corpus](https://osf.io/py9ba/)
+- [SUBTLEX-DE](https://osf.io/py9ba/)
 - [FILMS corpus](https://osf.io/rd7p6/)
 
-#### Internet Corpora 
-This type of resource collects texts available on the Internet. The advantage is that a large amount of text is available. However, data quality is typically lower (i.e., there is a higher rate of misspellings).
+#### Internet Corpora, TCR: ![Importance Rating 2](images/rating5.png) 
+This type of resource collects texts available on the Internet. The advantage is that a large amount of text is available. However, data quality is typically lower (e.g., there is a higher rate of misspellings).
 
 - [Leipzig corpus](https://corpora.uni-leipzig.de/en?corpusId=deu_news_2021) 
 - [deWaC corpus](https://wacky.sslmit.unibo.it/doku.php?id=frequency_lists)
 
 #### Ways to generate Corpora 
-Here are new ideas for creating corpora with generative language models ([more details](https://doi.org/10.31234/osf.io/gm9b6_v5)). 
+Here are new ideas for creating corpora with generative language models ([Schepens et al., 2025](https://doi.org/10.1162/OPMI.a.30)). 
 
 - 👧[LLM created ChildLex corpora](https://doi.org/10.17605/OSF.IO/WMUVJ)
+<- 👧[LLM created Child texts](https://doi.org/10.17605/OSF.IO/WMUVJ)> 
 
-### Variables to consider 
+### Variables to consider, TCR: ![Importance Rating 2](images/rating5.png)  
 
 Words vary in terms of orthographic features (e.g., number of letters, written word form frequency), phonological features (e.g., number of syllables, number of phonemes), morphological features (e.g., morphological complexity, number of morphemes), syntactical features (e.g., Part of Speech) and semantic features (e.g., word class, valence). There are no strict rules for which items to exclude when selecting words/non-words for a study. Manual filtering is not recommended, as it’s time-consuming and error-prone. The filtering process depends on the research question.
 
