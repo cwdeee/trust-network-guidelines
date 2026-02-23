@@ -5,11 +5,11 @@ This section is concerned with the stimulus Selection for German lexicon decisio
 
 
 ## Where to find words, TCR: ![Importance Rating 2](images/rating5.png)
-One should select Words from Corpora. The field of corpus linguistics provides text resources that offer representative collections of texts, including the most critical words from a given language. These resources allow us to determine the word status of a letter string and word characteristics that are important as selection criteria. For example, word frequency is one of the essential variables for lexical decision studies, that describes how often a word occurs per million words in a corpus which depending on the corpus quality (i.e., size and register) more or less reflects the frequency in natural language ([more details](https://doi.org/10.1177/0963721417727521)). 
+One should select Words from Corpora. The field of corpus linguistics provides text resources that offer representative collections of texts, including words from a given language. These resources allow us to determine the word status of a letter string and word characteristics that are important as selection criteria. For example, word frequency is one of the essential variables for lexical decision studies, that describes how often a word occurs in a corpus which depending on the corpus quality (i.e., size and register) more or less reflects the frequency in natural language ([Brysbaert et al., 2017](https://doi.org/10.1177/0963721417727521)). 
 
 
-### Corpora to Consider
-Conducting a lexical decision experiment in German requires relying on existing resources. Many resources are freely available, and others require a university account. Generally, corpora differ in size and register. A small corpus may provide inaccurate frequency estimates, especially for low-frequency words ([more details](https://doi.org/10.1037/0096-3445.113.2.256)). Register refers to the population sampled in the corpus. For example, the words in a child-book corpus differ from those in an adult newspaper corpus. Further, we can distinguish between written, spoken, subtitle and internet corpora as well as ways to generate specific corpora. Below, we present a non-exhaustive list of German resources that the members of the group recommend. To ensure word status, we highly recommended checking multiple corpora to account for potential misspellings that happen regularly. 
+### Corpora to Consider, TCR: ![Importance Rating 2](images/rating5.png)
+Conducting a lexical decision experiment in German requires relying on existing resources. Many resources are freely available, and others require a university account. Generally, corpora differ in size and register. A small corpus may provide inaccurate frequency estimates, especially for low-frequency words ([Gernsbacher 1984](https://doi.org/10.1037/0096-3445.113.2.256)). Register refers to the population sampled in the corpus. For example, the words in a child-book corpus differ from those in an adult newspaper corpus. Further, we can distinguish between written, spoken, subtitle and internet corpora as well as ways to generate specific corpora. Below, we present a non-exhaustive list of German resources that the members of the group recommend. To ensure word status, we highly recommended checking multiple corpora to account for potential misspellings that happen regularly. 
 
 
 We provide links in the following.
@@ -22,7 +22,7 @@ Register Legend:
 
 Note that no symbol reflects that the register are typical adults.
 
-#### Written Corpora 
+#### Written Corpora, TCR: ![Importance Rating 2](images/rating5.png)
 Texts collected from newspapers and books. 
 
 - [dlexDB corpus](https://doi.org/10.5281/zenodo.15097663)
