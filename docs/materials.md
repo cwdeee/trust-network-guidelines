@@ -1,5 +1,7 @@
 This section is concerned with the stimulus Selection for German lexicon decision tasks. In lexical decision experiments, participants see a single word or pseudoword on the screen and respond with a keypress to indicate whether the item is a word or a pseudoword. Items are generally selected to fit specific criteria that depend on the research question. The first step is to select the items – to identify suitable words and find or generate pseudowords. 
 
+#### Trust Consortium Rating ![Importance Rating 2](images/rating5.png)
+
 
 ## Where to find words
 One should select Words from Corpora. The field of corpus linguistics provides text resources that offer representative collections of texts, including the most critical words from a given language. These resources allow us to determine the word status of a letter string and word characteristics that are important as selection criteria. For example, word frequency is one of the essential variables for lexical decision studies, that describes how often a word occurs per million words in a corpus which depending on the corpus quality (i.e., size and register) more or less reflects the frequency in natural language ([more details](https://doi.org/10.1177/0963721417727521)). 
