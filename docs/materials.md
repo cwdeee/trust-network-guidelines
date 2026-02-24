@@ -54,14 +54,13 @@ This type of resource collects texts available on the Internet. The advantage is
 Here are new ideas for creating corpora with generative language models ([Schepens et al., 2025](https://doi.org/10.1162/OPMI.a.30)). 
 
 - 👧[LLM created ChildLex corpora](https://doi.org/10.17605/OSF.IO/WMUVJ)
-<- 👧[LLM created Child texts](https://doi.org/10.17605/OSF.IO/WMUVJ)> 
 
 ### Variables to consider, TCR: ![Importance Rating 2](images/rating5.png)  
 
-Words vary in terms of orthographic features (e.g., number of letters, written word form frequency), phonological features (e.g., number of syllables, number of phonemes), morphological features (e.g., morphological complexity, number of morphemes), syntactical features (e.g., Part of Speech) and semantic features (e.g., word class, valence). There are no strict rules for which items to exclude when selecting words/non-words for a study. Manual filtering is not recommended, as it’s time-consuming and error-prone. The filtering process depends on the research question.
+Words vary in terms of orthographic features (e.g., number of letters, written word form frequency), phonological features (e.g., number of syllables, number of phonemes), morphological features (e.g., morphological complexity, number of morphemes), syntactical features (e.g., Part of Speech) and semantic features (e.g., word class, valence). There are no strict rules for which items to exclude when selecting words/non-words for a study. Manual filtering is not recommended because it’s time-consuming, not reproducible, and error-prone. The filtering process depends on the research question.
 
-#### Exclusion of Taboo Words ![Importance Rating 2](images/rating2.png)
-Excluding taboo words can prevent participant traumatization. Thus, such words should only be used if necessary, and experiments involving them should account for measures that prevent adverse outcomes for participants. In general, it is advised to consult with an ethics committee. It is recommended to exclude slurs that some participants may perceive to be personally offensive and to include a trigger warning if such words are under investigation. [Sulpizio et al. (2024)](https://doi.org/10.3758/s13428-024-02376-6) provide a full list of German taboo words as supplementary materials.
+#### Exclusion of Taboo Words ![Importance Rating 2](images/rating4.png)
+Excluding taboo words can prevent participant traumatization. Thus, such words should only be used if necessary, and experiments involving them should account for measures that prevent adverse outcomes for participants. In general, it is advised to consult with an ethics committee. It is recommended to exclude slurs that some participants may perceive to be personally offensive and to include a trigger warning if such words are under investigation. [Sulpizio et al. (2024)](https://doi.org/10.3758/s13428-024-02376-6) provide a full list of German taboo words [HERE](https://osf.io/ecr32/overview).
 
 #### Inflections
 German is an especially inflection-rich language and has more inflected words than English. Inflected word forms are adjustments to base word forms that indicate grammatical aspects such as time or gender. The experimenter needs to decide how to treat inflected word forms. For example, the verb "gehen" has 17 different forms, including "ging" (past form).
