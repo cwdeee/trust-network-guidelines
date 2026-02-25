@@ -4,11 +4,11 @@ This section is concerned with the stimulus Selection for German lexicon decisio
 
 
 
-## Where to find words, TCR: ![Importance Rating 2](images/rating5.png)
+## Where to find words  ![Importance Rating 2](images/rating5.png)
 One should select Words from Corpora. The field of corpus linguistics provides text resources that offer representative collections of texts, including words from a given language. These resources allow us to determine the word status of a letter string and word characteristics that are important as selection criteria. For example, word frequency is one of the essential variables for lexical decision studies, that describes how often a word occurs in a corpus which depending on the corpus quality (i.e., size and register) more or less reflects the frequency in natural language ([Brysbaert et al., 2017](https://doi.org/10.1177/0963721417727521)). 
 
 
-### Corpora to Consider, TCR: ![Importance Rating 2](images/rating5.png)
+### Corpora to Consider  ![Importance Rating 2](images/rating5.png)
 Conducting a lexical decision experiment in German requires relying on existing resources. Many resources are freely available, and others require a university account. Generally, corpora differ in size and register. A small corpus may provide inaccurate frequency estimates, especially for low-frequency words ([Gernsbacher 1984](https://doi.org/10.1037/0096-3445.113.2.256)). Register refers to the population sampled in the corpus. For example, the words in a child-book corpus differ from those in an adult newspaper corpus. Further, we can distinguish between written, spoken, subtitle and internet corpora as well as ways to generate specific corpora. Below, we present a non-exhaustive list of German resources that the members of the group recommend. To ensure word status, we highly recommended checking multiple corpora to account for potential misspellings that happen regularly. 
 
 
@@ -22,7 +22,7 @@ Register Legend:
 
 Note that no symbol reflects that the register are typical adults.
 
-#### Written Corpora, TCR: ![Importance Rating 2](images/rating5.png)
+#### Written Corpora  ![Importance Rating 2](images/rating5.png)
 Texts collected from newspapers and books. 
 
 - [dlexDB corpus](https://doi.org/10.5281/zenodo.15097663)
@@ -35,16 +35,16 @@ Texts collected from newspapers and books.
     - Separate frequency counts for different ages (between 6 and 12), Contains annotation about word class, lemma, orthographic neighbourhood, bigram frequencies, etc.
 
 
-#### Spoken Corpora, TCR: ![Importance Rating 2](images/rating4.png)
+#### Spoken Corpora  ![Importance Rating 2](images/rating4.png)
 [Here](https://dgd.ids-mannheim.de/dgd/pragdb.dgd_extern.sys_inv?v_session_id=) one can find a list of German corpora of spoken language with diverse Registers and Sizes (Sign up necessary) constantly updated by the Institute of the German Language in Manheim. 
 
-#### Subtitle Corpora, TCR: ![Importance Rating 2](images/rating4.png)
+#### Subtitle Corpora  ![Importance Rating 2](images/rating4.png)
 Texts that have been used as movie/TV series subtitles. They represent spoken language after a script but provide written word forms. 
 
 - [SUBTLEX-DE](https://osf.io/py9ba/)
 - [FILMS corpus](https://osf.io/rd7p6/)
 
-#### Internet Corpora, TCR: ![Importance Rating 2](images/rating5.png) 
+#### Internet Corpora  ![Importance Rating 2](images/rating5.png) 
 This type of resource collects texts available on the Internet. The advantage is that a large amount of text is available. However, data quality is typically lower (e.g., there is a higher rate of misspellings).
 
 - [Leipzig corpus](https://corpora.uni-leipzig.de/en?corpusId=deu_news_2021) 
@@ -55,31 +55,31 @@ Here are new ideas for creating corpora with generative language models ([Schepe
 
 - 👧[LLM created ChildLex corpora](https://doi.org/10.17605/OSF.IO/WMUVJ)
 
-### Variables to consider, TCR: ![Importance Rating 2](images/rating5.png)  
+### Variables to consider  ![Importance Rating 2](images/rating5.png)  
 
 Words vary in terms of orthographic features (e.g., number of letters, written word form frequency), phonological features (e.g., number of syllables, number of phonemes), morphological features (e.g., morphological complexity, number of morphemes), syntactical features (e.g., Part of Speech) and semantic features (e.g., word class, valence). There are no strict rules for which items to exclude when selecting words/non-words for a study. Manual filtering is not recommended because it’s time-consuming, not reproducible, and error-prone. The filtering process depends on the research question.
 
-#### Exclusion of Taboo Words, TCR: ![Importance Rating 2](images/rating4.png)
+#### Exclusion of Taboo Words  ![Importance Rating 2](images/rating4.png)
 Excluding taboo words can prevent participant traumatization. Thus, such words should only be used if necessary, and experiments involving them should account for measures that prevent adverse outcomes for participants. In general, it is advised to consult with an ethics committee. It is recommended to exclude slurs that some participants may perceive to be personally offensive and to include a trigger warning if such words are under investigation. [Sulpizio et al. (2024)](https://doi.org/10.3758/s13428-024-02376-6) provide a full list of German taboo words [HERE](https://osf.io/ecr32/overview).
 
-#### Inflections, TCR: ![Importance Rating 2](images/rating4.png)
+#### Inflections  ![Importance Rating 2](images/rating4.png)
 German is an especially inflection-rich language and has more inflected words than English. Inflected word forms are adjustments to base word forms that indicate grammatical aspects such as time or gender. The experimenter needs to decide how to treat inflected word forms. For example, the verb "gehen" has 17 different forms, including "ging" (past form).
 
 - There are many more inflected word forms than lemmas, including very similar words that are almost identical in both form and meaning (e.g., "Katze" – cat, and "Katzen"). If inflected word forms are included, one may want to ensure that there are not too many similar words in the chosen word set.
 - Gender-Forms: Some nouns have gendered forms (Lehrer vs. Lehrerin). Traditionally, the male form is considered the default in most cases. It is possible to include only the more frequent form of each word. However, this may provide a biased picture, especially across multiple studies or in a large-scale study. In attempts to make language more gender-neutral, non-gendered plural forms are also increasingly common. These may be typographically unusual, such as the intrusion of non-letter characters "Lehrer*innen", "Lehrer:innen", or "Lehrer_innen". Other forms can be camel-back letters ("LehrerInnen") or intermediate slashes ("Lehrer/innen"). If such words are included, there must be foil non-words with similar structures to avoid providing a non-lexical cue to the word's lexicality. Another option could be using 50% of the relevant words in female form and the other 50% in male form. This will result in an equal representation of male and female versions, but not considering non-binary individuals. Accounting for the non-binary version, one could use gender neutral forms like "Lehrperson".
 - Using inflected words is closer to the actual use of language
 
-####  Inclusion of compounds, TCR: ![Importance Rating 2](images/rating4.png)
+####  Inclusion of compounds  ![Importance Rating 2](images/rating4.png)
 A distinctive feature of German is the use of compound words (e.g., “Kühlschrank”, which means fridge, is a cooling cupboard when translated literally). The creation of compound words is productive, such that speakers can create novel word forms on the fly. This poses some questions when selecting items. 
 
 - Including compounds allows us to examine a feature for which the German language is famous, and it stays closer to the actual use of language.  
 - If compounds are included, one might need a much larger number of items to have a broad coverage of representative words. At the same time, a larger number of words becomes available. 
 - The frequency counts for compound words may not be comparable cross-linguistically. At the extreme end, we may have perfectly legal and understandable neologisms with a frequency of 0. This is also to be considered when applying a word frequency threshold. A potential solution here is to consider a combined version of the single-word frequency within the individual compounds.
 
-#### Part of Speech, TCR: ![Importance Rating 2](images/rating4.png)
+#### Part of Speech  ![Importance Rating 2](images/rating4.png)
 Excluding certain parts of speech (e.g., function words) can simplify the selection process. However, it may reduce the items' representativeness.
 
-#### Lemmatization, TCR: ![Importance Rating 2](images/rating4.png)
+#### Lemmatization  ![Importance Rating 2](images/rating4.png)
 Lemmatization involves using lemmas (i.e., base forms of words; typically found in dictionaries) instead of individual word forms. 
 
 Pros:
@@ -93,8 +93,8 @@ Cons:
 
 - Lemmas may be unrepresentative of natural language use
 
-####  Filtering by other word characteristics, TCR: ![Importance Rating 2](images/rating5.png) 
-It is common to filter experimental items by other word characteristics. This has the advantage of removing “weird” items and removing variance that is not associated with an effect of interest, but at the same time runs the risk of creating a word set that is not representative of the actual language. For example, one could implement a selection criterion for slang/dialect words to remove potential age biases (e.g., dialect is likely reduced in younger participants). Other variables could include lean words or similar.
+####  Filtering by other word characteristics  ![Importance Rating 2](images/rating5.png) 
+It is common to filter experimental items by other word characteristics. Find a list of the most important word characteristics below. This has the advantage of removing “weird” items, which reduces variance not associated with the effect of interest, but at the same time runs the risk of creating a word set that is not representative of the actual language.
 
 Pro
 
@@ -105,21 +105,22 @@ Cons
 - May not be representative of the language
 - The cut-off points will be somewhat arbitrary 
 
-##### Word frequency 
+##### Word frequency  ![Importance Rating 2](images/rating5.png)
 There is an argument for excluding words with particularly low frequency, as these will be unknown to many participants.  
 
-- The experimenter can base the cut-off on written or spoken word frequency. Although they correlate, there is some dissociation between them. 
+- The experimenter can base the cut-off on word frequency based on the chosen corpus (see [HERE](https://trust-network-guidelines.readthedocs.io/en/latest/materials/#corpora-to-consider-tcr)). 
 - One should expect higher error rates if many low-frequency words are included. Rarely used words will likely be categorised as "not-a-word". 
-- It may be advisable to select the words so that one can check if the frequency effect is present in the collected data. This will provide a sanity check. The frequency effect is generally observable when the frequency lies between 0 and 2, in log-frequency per million.
+- To effectively measure the word frequency effect, select words with a wide range of frequency values. Including both high- and low-frequency words increases the likelihood of observing frequency modulation. Restricting the analysis to low-frequency words decreases the probability of detecting the effect (see [Brysbaert et al., 2017](https://doi.org/10.1177/0963721417727521) for more information).
 
-##### Word length (letters, phonemes, syllables) 
+##### Word length (letters, phonemes, syllables)  ![Importance Rating 2](images/rating5.png)
 
 - There may be pragmatic reasons for excluding very long words (i.e., making sure they fit on the screen)
-- There may be physiological reasons for excluding very long words (i.e., making sure the word fits the size of the retina, thus restricting the need for eye movements; an Empirical length restriction estimate would be 7 or fewer letters (e.g., see [Kliegl et al., 2004](https://doi.org/10.1080/09541440340000213)).
+- There may be physiological reasons for excluding very long words (i.e., making sure the word fits the size of the foveal region of the retina, thus restricting the need for eye movements; an Empirical length restriction estimate would be 7 or fewer letters (e.g., see [Kliegl et al., 2004](https://doi.org/10.1080/09541440340000213)).
 - One should be mindful that this may lead to a non-representative sample of words, such as a disproportionate exclusion of compound words and low-frequency words. 
 - Furthermore, there is no agreed-upon cut-off at which one would exclude words. 
 - Length covaries with many other variables, such as orthographic neighbourhood (long words have very few orthographic neighbours, if any). In selecting the length range, one should consider the extent to which length covaries with variables one is interested in.
-- Opinion taken by some previous studies (e.g., [Andrews, 1989](https://doi.org/10.1037/0278-7393.15.5.802) or [Fu & Gagl, 2025](https://doi.org/10.1162/jocn_a_02301)) is to restrict the items to one word length, e.g., using only monosyllabic four-letter words.
+- Some previous studies (e.g., [Andrews, 1989](https://doi.org/10.1037/0278-7393.15.5.802); [Fu & Gagl, 2025](https://doi.org/10.1162/jocn_a_02301)) have adopted a restriction to one-word items, e.g., using only four-letter words within an experiment. If one is interested in word-length effects, one can use blocks with a specified word length. The argument for such a procedure is that word length can be perceived in parafoveal vision in natural reading contexts and thus should be known to the participant. 
+- In German letter length is highly correlated with phoneme or syllable length but not exactly the same. For example the grapheme "sch" has one phoneme (/ʃ/; see [Gagl et al., 2015](https://doi.org/10.1080/10888438.2015.1026969)). 
 
 ##### Orthographic similarity/familiarity 
 
