@@ -160,18 +160,19 @@ We recommend automating the process of non-word creation, especially if a large 
 - Consult a representative of your target population (e.g., teenagers, undergraduate students) to check for potential slang words.
 - Check that nonword items are not real words in other languages likely spoken by the participants (e.g., English, French, Spanish, Turkish, Arabic or Italian).
 
-## How to determine the effect of a specific variable based on lexical decision data
+## How to determine the effect of a specific variable based on lexical decision data  ![Importance Rating 2](images/rating5.png)
 If we are interested in the effect of a given variable, we have several different paradigms available:
 
 - Orthogonal design: Select words and non-words so they vary maximally on the variable of interest while keeping the conditions comparable to all other variables listed above. Although it’s sometimes unavoidable to use such a design, there are some disadvantages:
     - It often constrains the number of possible items, leading to small numbers.
     - The selection of items that are not representative of the language or orthography. 
-    - Lack of methods to test if conditions are comparable (i.e., “matched”). Often, people use a t-test to show that, e.g., the two conditions don’t differ in word frequency, but this method has many problems. So we would advise against (i.e., t-tests cannot be used for equivalence testing, see [Lakens et al., 2018](https://doi.org/10.1177/2515245918770963); also infering the population mean is not what we want here; see [Sassenhagen & Alday, 2016](https://doi.org/10.1016/j.bandl.2016.08.001)). Here is a fundamental research gap, and more work needs to be done.  
+    - Lack of methods to test if conditions are comparable (i.e., “matched”). Often, people use a t-test to show that, e.g., the two conditions don’t differ in word frequency, but this method has many problems. So we would advise against (i.e., t-tests cannot be used for equivalence testing, see [Lakens et al., 2018](https://doi.org/10.1177/2515245918770963); also infering the population mean is not what we want here; see [Sassenhagen & Alday, 2016](https://doi.org/10.1016/j.bandl.2016.08.001)). There is a fundamental research gap, and more work is needed. One solution here could be to combine an orthogonal design with regression analyses.  
+    - Possible tools to help in designing a study could be [LexOPS](https://doi.org/10.3758/s13428-020-01389-1) or [MILP](https://doi.org/10.1016/j.neuron.2021.02.019) 
 
 - Dichotomising of naturally continuous variables: If our variable of interest is continuous, we must make arbitrary decisions about what constitutes a “low” versus “high” value for assigning words to different conditions. This also prevents us from investigating non-linearity.
-- Decorrelated itemsets: You can select a number of items that vary on your variable of interest but have a small correlation with other variables ([Protopapas & Kapnoula, 2013](https://escholarship.org/uc/item/1f2883gp)). The advantages are the same as above, except for the last point. 
+- Decorrelated item sets: You can select a number of items that vary on your variable of interest but have a small correlation with other variables ([Protopapas & Kapnoula, 2013](https://escholarship.org/uc/item/1f2883gp)). The advantages/disandvantages are the same as above. 
 - Large-scale study & bootstrapping ([Perry, 2022](https://doi.org/10.1177/17470218221086533)). 	
 - Regression analysis: This involves using confounding variables as regressors of no interest. Here, statistical methods like linear mixed effect models are advised as they can account for variance components on the level of the stimuli and participants simultaneously. 
 
-## Dialectic-specific considerations
-The German language has a wide range of dialects. However, as most people (predominantly undergraduate students) are exposed to Standard German regularly (e.g., at school, through movies and TV), and due to the high mobility within the German-speaking realm (especially among undergraduate students), we don’t recommend overthinking this in the context of a lexical decision task.
+## Dialectic-specific considerations  ![Importance Rating 2](images/rating4.png)
+The German language has a wide range of dialects (see the [German Language Map](https://dsa.info/europe/institution/dsa)). However, as most people (predominantly undergraduate students) are regularly exposed to Standard German (e.g., at school, through movies and TV), and given the high mobility within the German-speaking realm (especially among undergraduate students), we are not aware of research that provides clear recommendations. This is a research gap. 
