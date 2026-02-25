@@ -59,46 +59,46 @@ Here are new ideas for creating corpora with generative language models ([Schepe
 
 Words vary in terms of orthographic features (e.g., number of letters, written word form frequency), phonological features (e.g., number of syllables, number of phonemes), morphological features (e.g., morphological complexity, number of morphemes), syntactical features (e.g., Part of Speech) and semantic features (e.g., word class, valence). There are no strict rules for which items to exclude when selecting words/non-words for a study. Manual filtering is not recommended because it’s time-consuming, not reproducible, and error-prone. The filtering process depends on the research question.
 
-#### Exclusion of Taboo Words ![Importance Rating 2](images/rating4.png)
+#### Exclusion of Taboo Words, TCR: ![Importance Rating 2](images/rating4.png)
 Excluding taboo words can prevent participant traumatization. Thus, such words should only be used if necessary, and experiments involving them should account for measures that prevent adverse outcomes for participants. In general, it is advised to consult with an ethics committee. It is recommended to exclude slurs that some participants may perceive to be personally offensive and to include a trigger warning if such words are under investigation. [Sulpizio et al. (2024)](https://doi.org/10.3758/s13428-024-02376-6) provide a full list of German taboo words [HERE](https://osf.io/ecr32/overview).
 
-#### Inflections
+#### Inflections, TCR: ![Importance Rating 2](images/rating4.png)
 German is an especially inflection-rich language and has more inflected words than English. Inflected word forms are adjustments to base word forms that indicate grammatical aspects such as time or gender. The experimenter needs to decide how to treat inflected word forms. For example, the verb "gehen" has 17 different forms, including "ging" (past form).
 
 - There are many more inflected word forms than lemmas, including very similar words that are almost identical in both form and meaning (e.g., "Katze" – cat, and "Katzen"). If inflected word forms are included, one may want to ensure that there are not too many similar words in the chosen word set.
-- Gender-Forms: Some nouns have gendered forms (Lehrer vs. Lehrerin). Traditionally, the male form is considered the default in most cases. It is possible to include only the more frequent form of each word. However, this may provide a biased picture, especially across multiple studies or in a large-scale study. In attempts to make language more gender-neutral, non-gendered plural forms are also increasingly common. These may be typographically unusual, such as the intrusion of non-letter characters "Lehrer*innen", "Lehrer:innen", or "Lehrer_innen". Other forms can be camel-back letters ("LehrerInnen") or intermediate slashes ("Lehrer/innen"), although they are perceived as exclusive from non-binary individuals. If such words are included, there must be foil non-words with similar structures to avoid providing a non-lexical cue to the word's lexicality. Another option could be using 50% of the relevant words in female form and the other 50% in male form. This will result in an equal representation of male and female versions, but not considering non-binary individuals. Accounting for the non-binary version, one could use gender neutral forms like "Lerhrerperson".
+- Gender-Forms: Some nouns have gendered forms (Lehrer vs. Lehrerin). Traditionally, the male form is considered the default in most cases. It is possible to include only the more frequent form of each word. However, this may provide a biased picture, especially across multiple studies or in a large-scale study. In attempts to make language more gender-neutral, non-gendered plural forms are also increasingly common. These may be typographically unusual, such as the intrusion of non-letter characters "Lehrer*innen", "Lehrer:innen", or "Lehrer_innen". Other forms can be camel-back letters ("LehrerInnen") or intermediate slashes ("Lehrer/innen"). If such words are included, there must be foil non-words with similar structures to avoid providing a non-lexical cue to the word's lexicality. Another option could be using 50% of the relevant words in female form and the other 50% in male form. This will result in an equal representation of male and female versions, but not considering non-binary individuals. Accounting for the non-binary version, one could use gender neutral forms like "Lehrperson".
 - Using inflected words is closer to the actual use of language
 
-####  Inclusion of compounds
-A specialty of German is the use of compound words (e.g., “Kühlschrank”, which means fridge, is a cooling cupboard when translated literally). The creation of compound words is productive, such that speakers can create novel word forms on the fly. This poses some questions when selecting items. 
+####  Inclusion of compounds, TCR: ![Importance Rating 2](images/rating4.png)
+A distinctive feature of German is the use of compound words (e.g., “Kühlschrank”, which means fridge, is a cooling cupboard when translated literally). The creation of compound words is productive, such that speakers can create novel word forms on the fly. This poses some questions when selecting items. 
 
 - Including compounds allows us to examine a feature for which the German language is famous, and it stays closer to the actual use of language.  
 - If compounds are included, one might need a much larger number of items to have a broad coverage of representative words. At the same time, a larger number of words becomes available. 
 - The frequency counts for compound words may not be comparable cross-linguistically. At the extreme end, we may have perfectly legal and understandable neologisms with a frequency of 0. This is also to be considered when applying a word frequency threshold. A potential solution here is to consider a combined version of the single-word frequency within the individual compounds.
 
-#### Part of Speech
-Excluding certain parts of speech (e.g., function words) can simplify the selection process. However, it may also reduce the language's representativeness.
+#### Part of Speech, TCR: ![Importance Rating 2](images/rating4.png)
+Excluding certain parts of speech (e.g., function words) can simplify the selection process. However, it may reduce the items' representativeness.
 
-#### Lemmatization
+#### Lemmatization, TCR: ![Importance Rating 2](images/rating4.png)
 Lemmatization involves using lemmas (i.e., base forms of words; typically found in dictionaries) instead of individual word forms. 
 
 Pros:
 
 - Shorter list of words
 - Lemmas have more overlap with other corpora
-- Making inferences about a type based on the lemma RT is better than not having an RT of the type
-- Many more practical applications of RT data with lemmas (e.g., evaluating text difficulty, predicting item difficulty)
+- If participant behavior (e.g., response times, accuracies) are not collected for a specific type, then one option may be to infer responses from corresponding lemmas
+- Many more practical applications of behavioral response data with lemmas (e.g., evaluating text difficulty, predicting item difficulty)
 
 Cons:
 
-- Lemmas are often not identical to what is seen or heard in natural language
+- Lemmas may be unrepresentative of natural language use
 
-####  Filtering by other word characteristics
-It is common to filter experimental items by other word characteristics. This has the advantage of removing “weird” items and removing variance that is not associated with an effect of interest, but at the same time runs the risk of creating a word set that is not representative of the actual language. 
+####  Filtering by other word characteristics, TCR: ![Importance Rating 2](images/rating5.png) 
+It is common to filter experimental items by other word characteristics. This has the advantage of removing “weird” items and removing variance that is not associated with an effect of interest, but at the same time runs the risk of creating a word set that is not representative of the actual language. For example, one could implement a selection criterion for slang/dialect words to remove potential age biases (e.g., dialect is likely reduced in younger participants). Other variables could include lean words or similar.
 
 Pro
 
-- Reduces the number of untypical words (i.e., too long, too seldom, too untypical letter combinations)
+- Reduces the number of untypical words (i.e., too long, too infrequent, too untypical letter combinations)
 
 Cons
 
