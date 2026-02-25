@@ -141,24 +141,24 @@ There are numerous variables for which words and non-words in an experiment can 
 
 - Consonant-vowel structure: Pseudowords that contain unusual consonant or vowel clusters should be avoided. One way to do this is to ensure that the CV structure is identical to the words used in the experiment.
 - Morphological complexity: The morphological structure of words should match that of the words in the experiment.
-- Orthographic metrics described [HERE](https://trust-network-guidelines.readthedocs.io/en/latest/materials/#orthographic-similarityfamiliarity)
-- Visual characteristics like Optimal Transport measures ([Taylor et al., 2025](http://doi.org/10.1101/2024.11.11.622929)), acenders and decenders or similar. 
+- Orthographic metrics described [HERE](https://trust-network-guidelines.readthedocs.io/en/latest/materials/#orthographic-similarityfamiliaritytypicality)
+- Visual characteristics like Optimal Transport measures ([Taylor et al., 2025](https://doi.org/10.1162/NOL.a.19)), acenders and decenders or similar. 
 
-### How to create non-words
+### How to create non-words  ![Importance Rating 2](images/rating5.png)
 We recommend automating the process of non-word creation, especially if a large number of items are involved. There are numerous ways of doing this:
 
-- Pseudoword creators for German are available, such as [Wuggy](https://doi.org/10.3758/BRM.42.3.627) or [UniPseudo](https://journals.sagepub.com/doi/abs/10.1177/17470218231164373). 
+- Pseudoword creators for German are available, such as [Wuggy](https://doi.org/10.3758/BRM.42.3.627) or [UniPseudo](https://doi.org/10.1177/17470218231164373). 
 - Python is good for working with letter strings, and with medium-low programming skills, you can use it to create pseudowords:
     - Change one vowel or exchange all vowels with consonants to a set of non-words that match the words in your experimental task. 
     - From your basewords, exchange consonants for consonants and vowels for vowels with a certain probability
     - From your basewords, exchanging bigrams or trigrams
-    - Instead of relying on basewords, you can depend on language statistics: Combine common bigrams from the language (e.g., based on the FILMS corpus). Specify the length of your desired pseudowords. Select a random letter and then add letters with probabilities matching the structure of the German language. 
+    - Instead of relying on basewords, you can depend on language statistics: Combine common bigrams from the language (e.g., based on a [corpus](https://trust-network-guidelines.readthedocs.io/en/latest/materials/#corpora-to-consider)). Specify the length of your desired pseudowords. Select a random letter and then add letters with probabilities matching the structure of the German language. 
 
-### What to avoid
-- As for words, pseudowords similar to slurs that may cause offense should be avoided, unless needed to address the research question.  
-- If non-words should be pronounceable (i.e., pseudowords), one should eliminate illegal letter clusters. 
-- Slang words and dialect: It is advisable to get a representative of your target population (e.g., teenagers, undergraduate students) to check for potential slang words).
-- Items are words in a language commonly spoken as a foreign language, such as English, French, or Italian.
+### What to avoid  ![Importance Rating 2](images/rating4.png)
+- Avoid using pseudowords that resemble slurs, as they may cause offense, unless necessary to address the research question.  
+- Eliminate illegal letter clusters when constructing pronounceable non-words (i.e., pseudowords). 
+- Consult a representative of your target population (e.g., teenagers, undergraduate students) to check for potential slang words.
+- Check that nonword items are not real words in other languages likely spoken by the participants (e.g., English, French, Spanish, Turkish, Arabic or Italian).
 
 ## How to determine the effect of a specific variable based on lexical decision data
 If we are interested in the effect of a given variable, we have several different paradigms available:
