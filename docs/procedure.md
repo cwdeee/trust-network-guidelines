@@ -31,6 +31,39 @@ Here is a nonexhaustive list of programs used by the TRUST group in recent years
 
 The performance of the systems/platforms should be checked regarding the timing of the stimulus presentation and the latency of the key press. Information on this can be found here: [Bridges et al., 2020](https://doi.org/10.7717/peerj.9414); [Anwyl-Irvine et al., 2021](https://doi.org/10.3758/s13428-020-01501-5).
 
+## Programming considerations  ![Importance Rating 2](images/rating5.png)
+Several decisions have to be made when programming experiments. These relate to the task structure, the use of the response device, and data quality assurance. Typically, an experimental session consists of blocks of items, with each block consisting of trials, which refers to the sequence of events that the participant engages with. In the classical lexical decision task, a single word or non-word is presented in each trial.
+
+### Text encoding  ![Importance Rating 2](images/rating5.png)
+In principle, the text presentation is simple, but there can be nerve-wracking pitfalls (for example, when switching from a PC to a Mac computer). A special case in German is how text is encoded, meaning how letters and characters are stored in the computer's memory using specific digital codes. Some encoding systems do not allow the correct display of German-specific letters, such as the umlauts *ä*, *ö*, *ü*, *Ä*, *Ö*, *Ü*, or the sharp s *ß*. We highly recommend checking whether the presentation setup displays words with these letters correctly. 
+
+We recommend using *UTF-8*, a universal encoding for representing text digitally. UTF-8 can be set at the file level or within the presentation software. This encoding standard usually ensures that all characters, including German-specific letters, are shown correctly. 
+
+### Trial structure  ![Importance Rating 2](images/rating5.png)
+A trial generally has the following structure:
+
+- Fixation cross
+    - Fixation-cross presentation is implemented to prepare the participant for the upcoming trial. This presentation prevents eye movements or attentional blinks that could increase response times.
+    - Typically used signs are “+”, “*” or “x”. These fixation crosses serve as a forward mask to the reading material, potentially influencing behavior. 
+    - Our suggested alternative is to use vertical and horizontal lines indicating the stimulus's location, without overlap between the bars and the word. Optionally, when including multiple word lengths, include bars at the left and right to indicate word length. 
+    - Suggested duration of fixation cross presentation: 500 ms
+
+- Letter string presentation
+    - Reaction time, a main measure of the task, is measured from when the item appears on the screen until the response occurs. 
+    - Letter strings are recommended to stay on screen until a response. Alternatively, one can have a specific hypothesis that would make a shorter presentation time reasonable. Also, one could show the stimulus for a fixed amount of time to incentivize participants to focus on the task, respond quickly, and avoid taking long breaks in the middle of a block. Here, presentation duration could range from 200 ms to 1000 ms. * Adequate presentation times also vary by the target participant group. Children, language learners, or individuals with reading problems of any kind might often need longer presentation times than the average university student participant. When the participant responds before the maximum stimulus presentation time is over, the trial ends, the stimulus disappears, and the next trial is initiated.  
+    - The letter strings should be presented in a different random order for each participant.
+
+- Particiant response 
+    - Typically, participants are instructed to respond by pressing on a keyboard, e.g., Left key: “d”, right key: “k”
+    - Alternatively, one can implement a go/no-go task with only button presses for words or non-words. 
+    - Suppose the aim is to directly compare words and non-words (i.e., the so-called lexicality effect). In that case, it is recommended to counterbalance the response key between participants, such that half of them will press the left key for words and the right key for pseudowords, and the other half the other way around.
+    - If the number of words and non-words is counterbalanced, it is typical to instruct participants to press the Right key for words and the Left key for non-words.
+    - Alternatives to keyboard responses exist, such as keypads, touchscreens, or mouse clicks. For more information see [Pronk et al., 2020](https://doi.org/10.3758/s13428-019-01321-2), [Bridges et al., 2020](https://doi.org/10.7717/peerj.9414) or [Rodd, 2024](https://doi.org/10.1016/j.jml.2023.104472). 
+    - Inter-stimulus interval: A break before the next stimulus will reduce interference effects. We recommend a blank screen inter-trial interval of 500 ms between the response and the next fixation cross.
+
+After 100 trials, we recommend a short, self-paced break (“Press the space bar when you’re ready to continue”). 
+
+
 ## Participants  ![Importance Rating 2](images/rating5.png)
 The number of participants should be determined by a power calculation based on the size of the effect of interest (e.g., see [Brysbaert & Stevens, 2018](https://doi.org/10.5334/joc.10)). Note there are differences in power considerations when investigating individual differences (e.g., see [Hedge et al. (2018)](https://doi.org/10.3758/s13428-017-0935-1))
 
@@ -50,7 +83,7 @@ We recommend asking for:
 ### Controlled experiment  ![Importance Rating 2](images/rating4.png)
 With a small number of available participants and strong theoretical motivation, a controlled experiment is feasible. Here, participants respond to several items selected to vary on a specific characteristic, while not co-varying on other characteristics that may also affect reading processes (see relevant the section on How to determine the effect of a specific variable based on lexical decision data in [“Materials”](https://trust-network-guidelines.readthedocs.io/en/latest/materials/)). The design of a lexical decision task relies on the trade-off between available time and data quality. On the one hand, as the length of the experiment increases, the likelihood of participant drop-out increases. On the other hand, a short study with only a couple of items is less likely to provide high data quality. Considering time, assuming that a typical reading adult can finish a 30-60 minute task is reasonable. Such a task length may be suitable for 500-1,000 decisions (e.g., 250 words and 250 non-words), including pre-stimulus and post-response delays and pauses between blocks. 
 
-### Lexicon Projects - Semi-controlled regression designs ![Importance Rating 2](images/rating4.png)
+### Lexicon Projects - Semi-controlled regression designs  ![Importance Rating 2](images/rating4.png)
 Lexicon projects are, in principle, infrastructure projects that allow the exploration of new phenomena in extensive datasets with a broad stimulus and participant base. This format is particularly suitable when one wants to provide resources relevant to investigating reading and psycholinguistic processing, for example, in the context of a language or across many languages. Find a list here: 
 
 
@@ -75,37 +108,8 @@ Lexicon projects are, in principle, infrastructure projects that allow the explo
 
 The aim is to provide reaction time and accuracy estimates for single words. For such studies, it is recommended to maximise the number of experimental items, with several tens of thousands of words, and at least 30 datapoints per item. Due to time constraints, generally each participant responds to only a subset of items. Note that one can use the datasets from lexicon projects to create *virtual* controlled experiments (see [Kuperman 2015](https://doi.org/10.1080/17470218.2014.989865))
 
-### Crowd-sourcing lexical decision projects
+### Crowd-sourcing lexical decision projects  ![Importance Rating 2](images/rating4.png)
 If the researcher aims to collect large amounts of data, they may consider crowd-sourcing a project. Here, one would use a gamified lexical decision task, where each participant provides limited data in a very short experiment duration (e.g., 3 minutes). As this approach is more prone to noise, a much larger amount of data needs to be collected, with the recommendation to cover at least 100,000 words and 40 observations per item ([Amenta et al., 2025](https://doi.org/10.3758/s13428-024-02548-4)). 
 The study can estimate the participants’ vocabulary knowledge at the end of the study to provide an incentive for participation. For the items, one may choose a selection of higher-frequency words that are known to participants and words that are not generally known to all participants. This will allow for more informative vocabulary scores for the participants. In this case, the recommendation is to minimise the number of non-words, such that one has a ratio of 3 non-words to 7 words. 
 
-## Programming the experiment
-Several decisions have to be made when programming experiments. These relate to the task structure, the use of the response device, and data quality assurance. Typically, an experimental session consists of blocks of items, with each block consisting of trials, which refers to the sequence of events that the participant engages with. In the classical lexical decision task, a single word or non-word is presented in each trial.
 
-### Text encoding
-In principle, the text presentation is simple, but there can be nerve-wracking pitfalls. A special case for German is how text is encoded (i.e., the internal code for storing letter strings in the memory of the presenting computer). Some encodings do not allow the proper presentation of German-specific letters (e.g., umlauts *äöü* or the sharp s *ß*). We highly recommend checking the presentation setup specifically for words containing such letters. 
-
-We recommend *UTF-8* encoding, which can be defined on the file level or in the presentation software. This encoding usually works well. 
-
-### Trial structure
-A trial generally has the following structure:
-
-- Fixation cross
-    - Fixation-cross presentation is implemented to prepare the participant for the upcoming trial. This presentation prevents eye movements or attentional blinks that could increase response times.
-    - Typically used signs are “+”, “*” or “x”. These fixation crosses serve as a forward mask to the reading material, potentially influencing behavior. 
-    - Our suggested alternative is to use vertical and horizontal lines indicating the location of the stimulus, but without an overlap between bars and the word. 
-    - Suggested duration of fixation cross presentation: 500 ms
-
-- Letter string presentation
-    - Reaction time, a main measure of the task, is measured from when the item appears on the screen until the response occurs. 
-    - Letter strings are recommended to stay on screen until a response. Alternatively, one can have a specific hypothesis that would make a shorter presentation time reasonable. Also, one could show the stimulus for a fixed amount of time to incentivize participants to focus on the task, respond quickly, and avoid taking long breaks in the middle of a block. Here, presentation duration could range from 1500 ms to 5000 ms. For this case, pilot testing is advised to determine the typical range of response times for one’s specific stimulus set.
-    - The letter strings should be presented in a different random order for each participant.
-
-- Particiant response 
-    - Typically, participants are instructed to respond by pressing on a keyboard, e.g., Left key: “d”, right key: “k”
-    - Suppose the aim is to directly compare words and non-words (i.e., the so-called lexicality effect). In that case, it is recommended to counterbalance the response key between participants, such that half of them will press the left key for words and the right key for pseudowords, and the other half the other way around.
-    - If the number of words and non-words is counterbalanced, it is typical to instruct participants to press the Right key for words and the Left key for non-words.
-    - Alternatives to keyboard responses exist, such as keypads, touchscreens, or mouse clicks. For more information see [Pronk et al., 2020](https://doi.org/10.3758/s13428-019-01321-2), [Bridges et al., 2020](https://doi.org/10.7717/peerj.9414) or [Rodd, 2024](https://doi.org/10.1016/j.jml.2023.104472) for more information. 
-    - Inter-stimulus interval: A break before the next stimulus will reduce interference effects. We recommend a blank screen inter-trial interval of 500 ms between the response and the next fixation cross.
-
-After 100 trials, we recommend a short, self-paced break (“Press the space bar when you’re ready to continue”). 
