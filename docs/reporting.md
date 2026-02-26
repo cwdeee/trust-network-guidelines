@@ -1,23 +1,22 @@
 Reporting the research process transparently will allow others to reproduce the study and build on your work. We recommend maximising transparency of the whole research process. For a lexical decision study, the following are the most relevant aspects:
 
-## Rationale for the study:
+## Rationale for the study  ![Importance Rating 2](images/rating5.png)
 
-- Research questions can evolve around novel exploration, phenomena, or existing theories of reading. Relevant German theories and computational models are the Dual Route Cascaded model (German version: [Ziegler et al., 2000](https://doi.org/10.1080/09541440050114570)), CDP+ ([Perry et al., 2010](https://doi.org/10.1080/09541440902978365)), or, more recently, the speechless reader model investigating orthographic processing with a neuro-cognitively plausible implementation ([Gagl et al., 2024](https://doi.org/10.1101/2024.06.25.600635)). 
+- Research questions can evolve around novel exploration, phenomena, or existing theories of reading. 
 - Hypothesis: A pre-registration is highly recommended if the study is confirmatory and involves testing a specific hypothesis. Here, one should include the power calculation (to obtain the number of words and number of participants) and the statistical model, including the covariates and random effects structure. If highlighted as an exploration model, modifications can be conducted post-hoc but must be transparently reported.
 - Exploratory analyses: If one cannot determine a hypothesis a priori, one should transparently report that the analyses are exploratory
 
-## Documentation of contributions and sources
+## Documentation of contributions and sources  ![Importance Rating 2](images/rating4.png)
 
 - Keep track of contributions to the study, relevant papers and discussions with collaborators.
 - We recommend specifying author contributions using the CRedIT system to keep track and determine whether a contribution warrants co-authorship ([Holcombe, 2019](https://doi.org/10.3390/publications7030048)).
 
-## Methodology
+## Methodology  ![Importance Rating 2](images/rating5.png)
 
 - Keep track of the relevant choices and the rationale for the selection (e.g., "We used an inter-stimulus interval of 500 ms, as recommended by the TRUST guidelines"). 
 - For the reproducibility of a lexical decision study, you need to specify:
 
-    - Variable(s) of interest, along with rationale (if applicable)
-    - The corpus used for word selection
+    - Variable(s) of interest, along with rationale (if applicable) and transparent documentation on how they were calculated
     - Non-word generation process (with code as a supplement, if applicable)
     - Selection criteria for words and non-words (with code as a supplement, if applicable)
     - Specification of how word- and non-word-level characteristics were determined (with code as a supplement) 
@@ -30,12 +29,13 @@ Reporting the research process transparently will allow others to reproduce the 
     - Pilot studies that were used to inform decisions, along with justifications (as appendix or supplementary materials)
     - Experimental setup: e.g., online, Lab, field, or similar
 
-## Experimental procedure
+## Experimental procedure  ![Importance Rating 2](images/rating4.png)
+Note that the following are suggestions for what to report, rather than an exhaustive list.
 
 - Equipment:
 
     - In-lab hardware: display size, display refresh rate, distance from display [approximate or controlled with chinrest], chinrest if used, anything else you controlled
-    - In-lab tech specs: include in shared data information like OS, CPU, GPU, RAM
+    - In-lab tech specs: include in shared data information like Operating Systems or computer specifications (CPU, GPU, RAM, etc.)
     - Online study hardware: which devices were allowed and the proportions of responses from each device, as well as the internet browser used, including this as a variable in the trial-level data
 
 - Software:
@@ -50,7 +50,6 @@ Reporting the research process transparently will allow others to reproduce the 
     - Durations of everything shown to the participants (inter-stimulus intervals, inter-trial intervals if relevant)
     - Stimulus onset asynchrony (i.e., mean, range, standard deviation, distribution type, etc.)
     - Whether participant responses terminate stimulus presentation
-    - Pacing: Is the task self-paced, or is there a fixed pace
     - Timeouts are used for the response
     - Other relevant information: Have there been breaks, the randomisation method/trial order (potentially including transition probabilities), the number of trials, if stimulus and stimulus type repetitions were implemented, and if attention checks were implemented.
 
@@ -62,25 +61,27 @@ Reporting the research process transparently will allow others to reproduce the 
 - Stimulus parameters:
 
     - Font (including font file if possible)
-    - If the font is relevant to your experiment, use an open-source font.
+    - If the font is relevant to your experiment, consider using an open-source font.
     - Size (degrees of visual angle if controlled, give approximate visual angle if possible, see [here for tool to calculate stimulus size in visual angle](https://elvers.us/perception/visualAngle/))
-    - Luminance
+    - Consider measuring luminance
     - Background colour
     - Text colour
     - Kerning if not default
     - Graphic card setting like Anti-aliasing, etc.
 
-- “Macro” procedure
+- “Macro”-level procedure
 
     - Order of events: entering the lab, information about the study, experiment, debrief, payment, etc.
 
-## Results & Analysis
+## Results & Analysis  ![Importance Rating 2](images/rating4.png)
+
+Note most issues below are discussed [HERE](https://russpoldrack.substack.com/archive?sort=new)
 
 - Data & code
 
     - Share the raw trial-level data and code with necessary information: Item, anonymised participant ID, accuracy, reaction time, trial order, and central metadata: Relevant item and participant characteristics. Here, one can review the dataset description provided in the [BIDS specifications for guidance](https://bids-specification--1128.org.readthedocs.build/en/1128/modality-agnostic-files/dataset-description.html).
     - Analysis script, including libraries used & versions as supplementary materials
-    - Report in the manuscript what software and libraries were used, if possible - for example, share a containerized environment (e.g., Docker or better Podman files) for reproducing the computing environment, in case libraries differ between operating systems and computer architectures.
+    - Report in the manuscript what software and libraries were used, if possible - for example, share a containerized environment (e.g., Docker or better Podman files) for reproducing the computing environment, in case libraries differ between operating systems and computer architectures (see [Tutorials HERE](https://www.docker.com/101-tutorial/) or [HERE](https://russpoldrack.substack.com/p/using-containers-for-reproducible)).
     - Record who wrote what code (e.g., standardised file headers, a separate document containing this metadata; specify in CRedIT)
     - Comment code well to increase readability and understanding.
     - Use relative rather than absolute paths.
@@ -92,13 +93,13 @@ Reporting the research process transparently will allow others to reproduce the 
 - Data analysis
 
     - Give descriptives that make sense for the data, in terms of central tendency and dispersion/spread.
-    - Visualise only if this helps communicate (e.g., complex interactive effects)
+    - Visualise, especially when it this helps to communicate (e.g., complex interactive effects)
     - Explicate the criteria on which a decision for one modelling approach or another was made
     - Describe the model structure (e.g., fixed, random effects, distributional parameters, etc.) and the software used to fit it
     - If a model takes a long time to fit, share the output (e.g., share a .rds file for a Bayesian model if it takes more than a couple of hours to fit)
     - Describe & justify model diagnostics. For example, report model comparisons used to determine which variables were included in the model (both fixed & random effects). If there is a justification for a certain model diagnostic, then report it.	
 
-## Data Storage
+## Data Storage  ![Importance Rating 2](images/rating4.png)
 
 - Repositories & Platforms
 
@@ -106,13 +107,14 @@ Reporting the research process transparently will allow others to reproduce the 
     - Recommendations for specific platforms: choose the platform according to regulations (e.g., GDPR) that apply in your locale
     - Decentralise data storage by providing back-ups. Still provide one repository, but link to mirrors in the README.
     - Be aware of any conflicts between the data requirements of different countries.
+    - Implement [FAIR](https://www.go-fair.org/fair-principles/) data formats
 
 - Specific Platforms 
 
     - [ZPID](https://leibniz-psychology.org/en/products/archiving/publication) University Trier, Germany
     - [GIN](https://gin.g-node.org/) LMU, München, Germany
     - [NFDI](https://www.nfdi.de/?lang=en) Germany
-    - [OSF](https://www.cos.io/) US 
+    - [OSF](https://www.cos.io/) US/Germany 
     - [GitHub](https://github.com/about) San Francisco, US
     - Note that non-European platforms can be problematic for data security reasons, such that at least storage in the EU is highly recommended.
 
@@ -135,7 +137,7 @@ Reporting the research process transparently will allow others to reproduce the 
     - Any shared materials should be checked for copyright and license restrictions – e.g., corpora & published texts, font files, image/video / sound stimuli, code.
     - We recommend that people look into the [consequences of different open licenses](https://www.psycharchives.org/en/about#rights)
  
-## Manuscripts / Publications
+## Manuscripts / Publications  ![Importance Rating 2](images/rating4.png)
 
 - We recommend posting preprints to a server like PsyArXiv before the first submission; if that is not possible, image resources can be shared openly with DOIs such that the author retains rights to use the illustrations.
 - We recommend publishing the article as Open Access if possible. 
