@@ -1,8 +1,5 @@
-#### Trust Consortium Rating BAR (Median importance rated by consortium members): ![Importance Rating 2](images/rating5.png)
+
 This section is concerned with the stimulus Selection for German lexicon decision tasks. In lexical decision experiments, participants see a single word or non-word (e.g., a pseudoword) on the screen and respond with a keypress to indicate whether the item is a word or a pseudoword. Items are generally selected to fit specific criteria that depend on the research question. The after finding a research question on of the first steps is to select the items – to identify suitable words and find or generate pseudowords. 
-
-
-
 
 ## Where to find words  ![Importance Rating 2](images/rating5.png)
 One should select Words from Corpora. The field of corpus linguistics provides text resources that offer representative collections of texts, including words from a given language. These resources allow us to determine the word status of a letter string and word characteristics that are important as selection criteria. For example, word frequency is one of the essential variables for lexical decision studies, that describes how often a word occurs in a corpus which depending on the corpus quality (i.e., size and register) more or less reflects the frequency in natural language ([Brysbaert et al., 2017](https://doi.org/10.1177/0963721417727521)). 
@@ -119,7 +116,7 @@ There is an argument for excluding words with particularly low frequency, as the
 - One should be mindful that this may lead to a non-representative sample of words, such as a disproportionate exclusion of compound words and low-frequency words. 
 - Furthermore, there is no agreed-upon cut-off at which one would exclude words. 
 - Length covaries with many other variables, such as orthographic neighbourhood (long words have very few orthographic neighbours, if any). In selecting the length range, one should consider the extent to which length covaries with variables one is interested in.
-- Some previous studies (e.g., [Andrews, 1989](https://doi.org/10.1037/0278-7393.15.5.802); [Fu & Gagl, 2025](https://doi.org/10.1162/jocn_a_02301)) have adopted a restriction to one-word items, e.g., using only four-letter words within an experiment. If one is interested in word-length effects, one can use blocks with a specified word length. The argument for such a procedure is that word length can be perceived in parafoveal vision in natural reading contexts and thus should be known to the participant (e.g., see [Rayner et al.,2011](https://doi.org/10.1037/a0020990)). 
+- Some previous studies (e.g., [Andrews, 1989](https://doi.org/10.1037/0278-7393.15.5.802); [Fu & Gagl, 2025](https://doi.org/10.1162/jocn_a_02301)) have adopted a restriction to one-word items, e.g., using only four-letter words within an experiment. If one is interested in word-length effects, one can use blocks with a specified word length. The argument for such a procedure is that word length can be perceived in parafoveal vision in natural reading contexts and thus should be known to the participant in advance (e.g., see [Rayner et al.,2011](https://doi.org/10.1037/a0020990)). For the [German Lexicon Project](https://gewonn.github.io/trust/glp/), we accounted for this issue by implementing fixation bars that indicated word length before stimulus presentation. 
 - In German letter length is highly correlated with phoneme or syllable length but not exactly the same. For example the grapheme "sch" has one phoneme (/ʃ/; see [Gagl et al., 2015](https://doi.org/10.1080/10888438.2015.1026969)). 
 
 ##### Orthographic similarity/familiarity/typicality  ![Importance Rating 2](images/rating5.png)
