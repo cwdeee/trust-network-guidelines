@@ -98,13 +98,15 @@ Lexicon projects are, in principle, infrastructure projects that allow the explo
 | British English | [Keuleers et al., 2012](https://doi.org/10.3758/s13428-011-0118-4) |
 | American English | [Balota et al., 2007](https://doi.org/10.3758/BF03193014) |
 | French | [Ferrand et al., 2010](https://doi.org/10.3758/brm.42.2.488) |
-| German | [Schröter & Schroeder, 2017](https://doi.org/10.3758/s13428-016-0851-9) – note: the size of LP is relatively small and focusing on children; see updates on a larger [German Lexicon project](https://gewonn.github.io/trust/glp/) |
+| German | [Schröter & Schroeder, 2017](https://doi.org/10.3758/s13428-016-0851-9)<sup>*</sup> |
 | Hebrew | [Stein et al., 2024](https://doi.org/10.3758/s13428-024-02502-4) |
 | Malay | [Yap et al., 2010](https://doi.org/10.3758/brm.42.4.992) |
 | Persian | [Nemati et al., 2022](https://doi.org/10.1007/s10936-022-09863-x) |
 | Portuguese | [Soares et al., 2019](https://doi.org/10.1080/23273798.2019.1578395) |
 | Spanish | [Aguasvivas et al., 2018](https://doi.org/10.3389/fpsyg.2018.02156) |
 | Italian | [Amenta et al., 2024](https://doi.org/10.3758/s13428-024-02548-4) |
+
+<sup>*</sup> Note, the size of LP is relatively small and focusing on children. Find updates on a larger [German Lexicon project HERE](https://gewonn.github.io/trust/glp/) 
 
 The aim is to provide reaction time and accuracy estimates for single words. For such studies, it is recommended to maximise the number of experimental items, with several tens of thousands of words, and at least 30 datapoints per item. Due to time constraints, generally each participant responds to only a subset of items. Note that one can use the datasets from lexicon projects to create *virtual* controlled experiments (see [Kuperman 2015](https://doi.org/10.1080/17470218.2014.989865))
 
