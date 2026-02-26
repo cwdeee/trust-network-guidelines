@@ -52,24 +52,26 @@ If the main effects and interaction are not present, one should troubleshoot the
 - The design of the experiment (are the reaction times recorded as the number of seconds/milliseconds between stimulus onset and response?) 
 <!--- - The participant responses (do they provide atypically short or long responses, potentially suggesting low engagement with the task; e.g., if a participants wants that the experiment ends fast the best strategy would be to do a reaction time task where one presses a button irrespective of stimulus quality as fast as possible, ignoring that the instruction would be also to do the task correctly).  --->
 
-### Assessing the effect of interest
-- We recommend Linear Mixed Effect modelling on trial-level data, with crossed random effects for item and participant (see the [lme4 package](https://github.com/lme4/lme4) for a frequentist and [brm package](https://github.com/paul-buerkner/brms)) for a Bayesian approach). 
+### Assessing the effect of interest  ![Importance Rating 2](images/rating5.png)
+- We recommend Linear Mixed Effect modelling on trial-level data, with crossed random effects for item and participant (see the [lme4 package](https://github.com/lme4/lme4) for a frequentist and [brms package](https://github.com/paul-buerkner/brms) for a Bayesian approach). See [Baayen, Davidson & Bates (2008)](https://doi.org/10.1016/j.jml.2007.12.005) or [Meteyard & Davies (2020)](https://doi.org/10.1016/j.jml.2020.104092)for a general tutorial.  
 - Center all continuous variables (i.e., subtract the mean of all values of each given variable from the value itself, so that the average is 0) - this means that the estimates of the model will represent the grand mean. We strongly advise against dichotomising continuous variables as several potential problems can arise (e.g., equal distribution of cases, etc.)
 - Contrast code dichotomous variables (e.g., see [Schad et al., 2020](https://doi.org/10.1016/j.jml.2019.104038) for a tutorial).
 - Fit the fixed effect specification in accordance with the hypothesis (e.g., if interested in the frequency-by-lexicality interaction: rt ~ freq * lex; R formula syntax)
 - Then, add covariates of no interest as fixed effects (frequency, trial order, previous trial RT, orthographic/phonological Levenshtein distance, Age of Acquisition, etc.).
 - For a tutorial regarding the random effect specification, see [Bates et al. (2018)](https://doi.org/10.48550/arXiv.1506.04967)
-- Use theoretical knowledge about the different predictors to decide whether the effect of continuous variables should be linear or not (e.g., see [Kliegl et al., 2006](https://doi.org/10.1037/0096-3445.135.1.12)
+- Use theoretical knowledge about the different predictors to decide whether the effect of continuous variables should be linear or not (e.g., see [Kliegl et al., 2006](https://doi.org/10.1037/0096-3445.135.1.12))
+
+*Important*: The standards in the field are ever changing, so it is every researcher's responsibility to stay as up to date as possible.
  
 
-### Inference and reporting
+### Inference and reporting  ![Importance Rating 2](images/rating5.png)
 Depending on your research question and preferences, you can either assess the significance of effects of interests or quantify the size of these effects (including whether the estimate is likely zero). 
 
 - Frequentist significance testing: This is the most common approach. 
 
-    - If you fit the model with the R packages lme4 to estimate effect sizes and model fits. If needed, one can use a package like lmerTest to provide p-values for each fixed effect and interaction in the model. 
+    - If you fit the model with the R packages lme4 to estimate effect sizes and model fits. If needed, one can use a R package like lmerTest to provide p-values for each fixed effect and interaction in the model (find alternatives [HERE](https://rdrr.io/cran/lme4/man/pvalues.html)). 
     - We recommend reporting the unstandardised model effect size estimate (slope), standard error of the estimate, and t- and p-values. 
-    - For pre-registered a priori hypotheses, we recommend an alpha-level of 0.05 to determine significance. In the case of exploratory or post-hoc analyses, one should apply a Bonferroni correction (see [von der Malsburg & Angele, 2017](https://doi.org/10.1016/j.jml.2016.10.003)).
+    - For pre-registered a priori hypotheses, a commonly used alpha threshold for statistical significance is .05, but we note that lower cutoffs may be preferable ([Benjamin et al., 2018](https://doi.org/10.1038/s41562-017-0189-z)), and that rather than a single cutoff, researchers could justify their specific choice of alpha based on the expected outcomes of their decision ([Lakens et al., 2018](https://doi.org/10.1038/s41562-018-0311-x); [Maier & Lakens, 2022](https://doi.org/10.1177/25152459221080396)). In the case of exploratory or post-hoc analyses, one should apply a correction for multiple comparisons (e.g., Bonferroni correction, [von der Malsburg & Angele, 2017](https://doi.org/10.1016/j.jml.2016.10.003); False discovery rate, familywise error correction).
     - Frequentist effect size estimation: To interpret the effect size and its estimated accuracy, one can report the effect size estimate and its 95% confidence interval (see [Cumming, 2013](https://doi.org/10.1177/095679761350496)). The package nlme provides 95% confidence intervals for main effects and interactions in mixed-effect models.
 
 - Bayesian statistical tests: Instead of frequentist p-values, one can rely on Bayes Factors for inference (e.g., [Schmalz et al., 2023](https://doi.org/10.1037/met0000421)).
@@ -80,13 +82,13 @@ Depending on your research question and preferences, you can either assess the s
     - Unless one has theoretical reasons for doing otherwise, we recommend using the default prior to the BayesFactor package. If a different prior is chosen, it should be clearly reported and justified.
     - For more straightforward interpretability, we recommend placing the more complex model in the numerator, so that increasingly small values (< 1) correspond to evidence for the null model and increasingly large values (>1) correspond to evidence for the alternative model.
     - We recommend a continuous interpretation of the Bayes Factor rather than a "trichotomisation".
-    - Bayesian effect size estimation: Unlike the Frequentist approach, which relies on the observed data only, Bayesian effect size estimation considers prior knowledge, which can take the form of existing data. See Bürkner, 2017 (10.18637/jss.v080.i01) for a tutorial.
+    - Bayesian effect size estimation: Unlike the Frequentist approach, which relies on the observed data only, Bayesian effect size estimation considers prior knowledge, which can take the form of existing data. See [Bürkner, 2017](10.18637/jss.v080.i01) for a tutorial.
 
-### Additional possibilities for analysis
+### Additional possibilities for analysis  ![Importance Rating 2](images/rating4.png)
 Monte-carlo simulated experiments for a priori or post hoc measurements.
 Existing large-scale datasets (i.e., lexicon projects like the [British Lexicon Project](https://doi.org/10.3758/s13428-011-0118-4)) allow subsampling experiments that enable running experiments with specific sample sizes and stimulus material to investigate effects (see [Kupermann, 2015](https://doi.org/10.1080/17470218.2014.989865), [Perry, 2024](https://doi.org/10.1371/journal.pone.0296874) for examples)
 
-Beyond measuring an effect or phenomenon typically means implementing completely different inference methods. Commonly, one would like to predict future events based on current data (i.e., the prediction approach) or explain the causal structure of a phenomenon/effect to understand reading better (see [Hofman et al. 2021](https://doi.org/10.1038/s41586-021-03659-0) for a perspective). 
+Beyond measuring an effect or phenomenon, one typically needs to implement a different set of inference methods. Commonly, one would like to predict future events based on current data (i.e., the prediction approach) or explain the causal structure of a phenomenon/effect to understand reading better (see [Hofman et al. 2021](https://doi.org/10.1038/s41586-021-03659-0) for a perspective). 
 
 - Explanation focused (neuro)-cognitive models, one would use model simulations a priori to specify hypotheses potentially leading to model comparison leading to inference over models (e.g., [Perry et al., 2007](https://doi.org/10.1037/0033-295X.114.2.273) or [Gagl et al., 2025](https://doi.org/10.1101/2024.06.25.600635); see [Norris, 2013](https://doi.org/10.1016/j.tics.2013.08.003) for a review)
     
@@ -97,4 +99,4 @@ Beyond measuring an effect or phenomenon typically means implementing completely
 
     - Explainations based on archetectual constraints (i.e., compare [Linke et al., 2017](https://doi.org/10.1371/journal.pone.0183876) vs. [Hannagan et al., 2014](https://doi.org/10.1371/journal.pone.0084843)) or through implementation of different training regimes ([Hannagan et al., 2022](https://doi.org/10.1073/pnas.2104779118)) or the investigation of neuro-cognitive processes related to reading ([Rajalingham et al., 2020](https://doi.org/10.1038/s41467-020-17714-3); but see model comparisons can be applied to infer over-prediction and explanation focused models [Pauli et al., 2025](https://doi.org/10.1101/2025.05.16.654419)).
     - Investigating memory structure (e.g., [Trautwein et al., 2018](https://doi.org/10.3389/fpsyg.2018.02252) or [Gatti et al., 2023](https://doi.org/10.1037/xge0001304))
-    - Diagnostics (e.g., [Gregorova et al., 2024](https://doi.org/10.1038/s41539-024-00237-7); but see [Ziegler et al., 2020](https://doi.org/10.1177/0956797618823540) for an approach using a explaination focused model)
+    - Diagnostics (e.g., [Schmidtke & Moro, 2020](https://doi.org/10.1002/rrq.362); [Gagl & Gregorova, 2024](https://doi.org/10.1038/s41539-024-00237-7); but see [Ziegler et al., 2020](https://doi.org/10.1177/0956797618823540) for an approach using a explaination focused model)
