@@ -1,55 +1,79 @@
-## Before you start the experiment
+## Before you start the experiment  ![Importance Rating 2](images/rating5.png)
 Although lexical decision tasks are typically low-risk and low-cost experiments, one must know if they have the available resources. You need to consider several practical aspects before starting data collection, which are mostly the same as for other low-risk psychological experiments:
 
-- Lab-based study: a quiet lab room with a computer
-- Online study: Web server or funding for a hosting service. 
-- Potentially funding for the research software, but be aware that there are multiple open source software solutions without costs. 
-- Participant reimbursement: How much can I or am I expected to pay participants?
-- Ethics permission: At present, ethics permission is not required by law but may be subject to university, funder, and journal policies. It is highly advised to obtain an ethical vote. In case your university does not have an ethics committee, one can consult the ethics committee of the DGPS (German Society of Psychology)
-- Data safety and storage: In the European Union, data storage needs to comply with the GDPR (as of 2025). It is the researcher's responsibility to ensure that their experiment complies with the local and current standards. 
+- Lab-based study: quiet lab room with a computer. 
+- Online study: web server or hosting service funding. 
+- Research software may require funding. However, multiple open-source options are available at no cost. 
+- Participant reimbursement: Specify the exact amount or range you plan or are expected to pay participants. Consider local guidelines, customary rates, and any specific requirements from your institution or funding source.
+- Ethics permission: Ethics approval is not legally required in Germany (this might be different elsewhere), but may be needed by your university, funder, or journal. It is recommended to seek ethical clearance. In case your university does not have an ethics committee, one can consult the ethics committee of the [German Society of Psychology](https://www.dgps.de/serviceangebote/ethikkommission)
+- Data safety and storage: In the European Union, data storage needs to comply with the GDPR (as of 2025). It is the researcher's responsibility to ensure that their experiment complies with current local standards. 
 
-## Programming the experiment
+## Programming the experiment  ![Importance Rating 2](images/rating5.png)
 The first step is to program the experiment: We want the experimental software to show each trial and to record the participant’s response to the trial and the reaction time. A lexical decision task can be programmed with medium-low programming skills. Templates are available for beginners on many of the existing experimental platforms (see examples below).
 
-### Possible platforms to run the experiment
-Here is a nonexhaustive list of programs used by the group in recent years. Typically, all solutions have a forum for customer support and examples available. Find more information at the webpages linked below. 
+### Possible platforms to run the experiment  ![Importance Rating 2](images/rating4.png)
+Here is a nonexhaustive list of programs used by the TRUST group in recent years. Typically, all solutions have a forum for customer support and examples available. Find more information at the webpages linked below. 
 
 | Program                                                                       | Cost     | Programming skill | Online hosting | 
 |-------------------------------------------------------------------------------|----------|-------------------|----------------|
 | [Psytoolkit](https://www.psytoolkit.org)                                      | Free     | Intermediate      | Platform       | 
 | [PsychoPy](https://www.psychopy.org/)                                         | Free     | No                | Self           |
 | [Pavlovia](https://pavlovia.org/)                                             | Yes      | No                | Platform       |
-| [PsychJS](https://www.jspsych.org/v7/)                                        | Free     | Yes               | Self           |
+| [JsPsych](https://www.jspsych.org/v7/)                                        | Free     | Yes               | Self           |
 | [Open Sesame](https://osdoc.cogsci.nl/)                                       | Free     | No                | Self           |
 | [Open Sesame Online (OSWeb)](https://osdoc.cogsci.nl/3.3/manual/osweb/osweb/) | Free     | No                | Platform       |
-| [EyeLink Experiment Builder](https://www.sr-research.com/experiment-builder/) | Licenced | No                | No             |
+| [EyeLink Experiment Builder](https://www.sr-research.com/experiment-builder/) | Yes      | No                | No             |
+| [Gorilla](https://gorilla.sc/)                                                | Yes      | No                | Yes            |
+| [EPrime](https://pstnet.com/products/e-prime/)                                | Yes      | No                | No             |
+| [Presentation](https://neurobs.com/)                                          | Yes      | Yes               | No             |
 
-<!--| Gorilla                            |        |                |                |  |                    |
-| Inquisit                           |        |                |                |  |                    |-->
 
-The performance of the systems/platforms should be checked regarding the timing of the stimulus presentation and the latency of the key press. Information on this can be found [here](https://doi.org/10.7717/peerj.9414) and [here](https://doi.org/10.3758/s13428-020-01501-5).
 
-## Participants
+The performance of the systems/platforms should be checked regarding the timing of the stimulus presentation and the latency of the key press. Information on this can be found here: [Bridges et al., 2020](https://doi.org/10.7717/peerj.9414); [Anwyl-Irvine et al., 2021](https://doi.org/10.3758/s13428-020-01501-5).
+
+## Participants  ![Importance Rating 2](images/rating5.png)
 The number of participants should be determined by a power calculation based on the size of the effect of interest (e.g., see [Brysbaert & Stevens, 2018](https://doi.org/10.5334/joc.10)). Note there are differences in power considerations when investigating individual differences (e.g., see [Hedge et al. (2018)](https://doi.org/10.3758/s13428-017-0935-1))
 
 There are no fixed rules about inclusion criteria. If the aim is to minimise inter-individual differences and examine differences on the word (or non-word) level, criteria can maximise similarity between participants (e.g., age, level of education). Possible recruitment strategies could be a convenience sample (e.g., undergraduate students), online platforms, or snowball sampling.
 
-Unless it is relevant to the research question, we strongly recommend minimizing the number of additional questions. Every new bit of information reduces the anonymity, as identification based on the data should not be possible by law (i.e., GDPR rules). For example, if location, gender, and highest education are collected, identification in a rural region could be possible already. In addition, fewer questions reduce the testing time for participation. Such a questionnaire should be embedded at the beginning of the experiment. 
+Unless it is relevant to the research question, we strongly recommend minimizing the number of additional questions. Every new bit of information reduces the anonymity, as identification based on the data should not be possible by law (i.e., GDPR rules). For example, if location, gender, and highest education are collected, identification in a rural region could be possible already. In addition, fewer questions reduce the testing time for participation. Such a questionnaire should be embedded at the beginning or the end of the experiment. 
 
 We recommend asking for:
 
-- Language history
+- Language history (i.e., for reference see [Li et al., 2006](https://doi.org/10.3758/BF03192770))
 - Age
 - Highest education
-- Although gender is often reported and even requested by reviewers, we consider it irrelevant, as there is no evidence of moderation of the cognitive processes underlying reading in German adult readers.
+- Although gender is often reported and even requested by reviewers, we consider it less relevant, as there is no evidence of gender differences in the cognitive processes underlying reading in German adult readers. This is, although a research gap in need of evidence. 
 
 ## Design options
 
-### Controlled experiment
-With a small number of available participants and strong theoretical motivation, a controlled experiment is feasible. Here, participants respond to several items selected to vary on a specific characteristic, while not co-varying on other characteristics that may also affect reading processes (see relevant the section on How to determine the effect of a specific variable based on lexical decision data in [“Materials”](https://trust-network-guidelines.readthedocs.io/en/latest/materials/)). The design of a lexical decision task relies on the trade-off between available time and data quality. On the one hand, as the length of the experiment increases, the likelihood of participant drop-out increases. On the other hand, a short study with only a couple of items is less likely to provide high data quality. Considering time, assuming that a typical reading adult can finish a 30-minute task is reasonable. Such a task length may be suitable for 500 decisions (i.e., 250 words and 250 non-words), including pre-stimulus and post-response delays and pauses between blocks. 
+### Controlled experiment  ![Importance Rating 2](images/rating4.png)
+With a small number of available participants and strong theoretical motivation, a controlled experiment is feasible. Here, participants respond to several items selected to vary on a specific characteristic, while not co-varying on other characteristics that may also affect reading processes (see relevant the section on How to determine the effect of a specific variable based on lexical decision data in [“Materials”](https://trust-network-guidelines.readthedocs.io/en/latest/materials/)). The design of a lexical decision task relies on the trade-off between available time and data quality. On the one hand, as the length of the experiment increases, the likelihood of participant drop-out increases. On the other hand, a short study with only a couple of items is less likely to provide high data quality. Considering time, assuming that a typical reading adult can finish a 30-60 minute task is reasonable. Such a task length may be suitable for 500-1,000 decisions (e.g., 250 words and 250 non-words), including pre-stimulus and post-response delays and pauses between blocks. 
 
-### Lexicon Projects
-Lexicon projects are, in principle, infrastructure projects that allow the exploration of new phenomena in extensive datasets with a broad stimulus and participant base. This format is particularly suitable when one wants to provide resources relevant to investigating reading and psycholinguistic processing, for example, in the context of a language or across many languages (i.e., as there are now many different lexicon projects; Chinese: [Tse et al., 2017](https://doi.org/10.3758/s13428-016-0810-5); Dutch: [Keuleers et al., 2010](https://doi.org/10.3389/fpsyg.2010.00174); English: [Keuleers et al., 2012](https://doi.org/10.3758/s13428-011-0118-4); French [Ferrand et al., 2010](https://doi.org/10.3758/brm.42.2.488); German [Schreuter & Schroeder, 2017](https://doi.org/10.3758/s13428-016-0851-9); Hebrew: [Stein et al., 2024](https://doi.org/10.3758/s13428-024-02502-4); Malay [Yap et al., 2010](https://doi.org/10.3758/brm.42.4.992); Persian: [Nemati et al., 2022](https://doi.org/10.1007/s10936-022-09863-x); Portuguese [Soares et al., 2019](https://doi.org/10.1080/23273798.2019.1578395); Spanish: [Aguasvivas et al., 2018](https://doi.org/10.3389/fpsyg.2018.02156)). The aim is to provide reaction time and accuracy estimates for single words. For such studies, it is recommended to maximise the number of experimental items, with several tens of thousands of words, and at least 30 datapoints per item. Due to time constraints, generally each participant responds to only a subset of items. Note that one can use the datasets from lexicon projects to create *virtual* controlled experiments (see [Kuperman 2015](https://doi.org/10.1080/17470218.2014.989865))
+### Lexicon Projects - Semi-controlled regression designs ![Importance Rating 2](images/rating4.png)
+Lexicon projects are, in principle, infrastructure projects that allow the exploration of new phenomena in extensive datasets with a broad stimulus and participant base. This format is particularly suitable when one wants to provide resources relevant to investigating reading and psycholinguistic processing, for example, in the context of a language or across many languages. Find a list here: 
+
+
+| Language | Reference |
+|----------|-----------|
+| Mandarin | [Sze et al., 2014](https://doi.org/10.3758/s13428-013-0355-9) |
+| Mandarin | [Tsang et al., 2018](https://doi.org/10.3758/s13428-017-0944-0) |
+| Mandarin | [Wang et al., 2025](https://doi.org/10.3758/s13428-025-02701-7) |
+| Cantonese | [Tse et al., 2017](https://doi.org/10.3758/s13428-016-0810-5) |
+| Cantonese | [Tse et al., 2022](https://doi.org/10.3758/s13428-022-02022-z) |
+| Dutch | [Keuleers et al., 2010](https://doi.org/10.3389/fpsyg.2010.00174) |
+| British English | [Keuleers et al., 2012](https://doi.org/10.3758/s13428-011-0118-4) |
+| American English | [Balota et al., 2007](https://doi.org/10.3758/BF03193014) |
+| French | [Ferrand et al., 2010](https://doi.org/10.3758/brm.42.2.488) |
+| German | [Schröter & Schroeder, 2017](https://doi.org/10.3758/s13428-016-0851-9) – note: the size of LP is relatively small and focusing on children; see updates on a larger [German Lexicon project](https://gewonn.github.io/trust/glp/) |
+| Hebrew | [Stein et al., 2024](https://doi.org/10.3758/s13428-024-02502-4) |
+| Malay | [Yap et al., 2010](https://doi.org/10.3758/brm.42.4.992) |
+| Persian | [Nemati et al., 2022](https://doi.org/10.1007/s10936-022-09863-x) |
+| Portuguese | [Soares et al., 2019](https://doi.org/10.1080/23273798.2019.1578395) |
+| Spanish | [Aguasvivas et al., 2018](https://doi.org/10.3389/fpsyg.2018.02156) |
+| Italian | [Amenta et al., 2024](https://doi.org/10.3758/s13428-024-02548-4) |
+
+The aim is to provide reaction time and accuracy estimates for single words. For such studies, it is recommended to maximise the number of experimental items, with several tens of thousands of words, and at least 30 datapoints per item. Due to time constraints, generally each participant responds to only a subset of items. Note that one can use the datasets from lexicon projects to create *virtual* controlled experiments (see [Kuperman 2015](https://doi.org/10.1080/17470218.2014.989865))
 
 ### Crowd-sourcing lexical decision projects
 If the researcher aims to collect large amounts of data, they may consider crowd-sourcing a project. Here, one would use a gamified lexical decision task, where each participant provides limited data in a very short experiment duration (e.g., 3 minutes). As this approach is more prone to noise, a much larger amount of data needs to be collected, with the recommendation to cover at least 100,000 words and 40 observations per item ([Amenta et al., 2025](https://doi.org/10.3758/s13428-024-02548-4)). 

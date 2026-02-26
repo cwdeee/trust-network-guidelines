@@ -12,7 +12,7 @@ The **TRUST** is funded by the **German Research Foundation (DFG)** and will run
 
 This Guideline page is the result of our first meeting, which started a consensus-based guideline generation process. We began defining the core guidelines in our first meeting. In a second step, we wrote a text document, which was then commented on by the TRUST members. Next, we included the comments and implemented this guideline page. Next we implemented a survey that included all the points form the text document. In the survey, every member had to rate the importance of each guideline issue (on a scale from 1 to 5, with 1 = low and 5 = high) and could provide additional feedback. 
 
-* The guidelines on this page now include guidelines after two rounds of feedback from the TRUST consortium, and the TRUST consortium's importance rating depicted by these bars (Median importance rated by consortium members): 
+The guidelines on this page now include guidelines after two rounds of feedback from the TRUST consortium, and the TRUST consortium's importance rating depicted by these bars (Median importance rated by consortium members): 
 
 Rating 1/5: ![Importance Rating 2](images/rating1.png)
 Rating 2/5: ![Importance Rating 2](images/rating2.png)
@@ -39,5 +39,5 @@ In the network, we bring together a group of expert researchers to compile:
 
 ---
 
-© 2025 The German Word Nerd Network  
-[Visit the original TRUST Network site](https://sites.google.com/view/gewonn/trust-network)
+© 2026 The German Word Nerd Network  
+[Visit the original TRUST Network site](https://gewonn.github.io/)
