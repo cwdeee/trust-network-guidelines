@@ -50,10 +50,10 @@ A trial generally has the following structure:
 
 - Letter string presentation
     - Reaction time, a main measure of the task, is measured from when the item appears on the screen until the response occurs. 
-    - Letter strings are recommended to stay on screen until a response. Alternatively, one can have a specific hypothesis that would make a shorter presentation time reasonable. Also, one could show the stimulus for a fixed amount of time to incentivize participants to focus on the task, respond quickly, and avoid taking long breaks in the middle of a block. Here, presentation duration could range from 200 ms to 1000 ms. * Adequate presentation times also vary by the target participant group. Children, language learners, or individuals with reading problems of any kind might often need longer presentation times than the average university student participant. When the participant responds before the maximum stimulus presentation time is over, the trial ends, the stimulus disappears, and the next trial is initiated.  
+    - Letter strings are recommended to stay on screen until a response. Alternatively, one can have a specific hypothesis that would make a shorter presentation time reasonable. Also, one could show the stimulus for a fixed amount of time to incentivize participants to focus on the task, respond quickly, and avoid taking long breaks in the middle of a block. Here, presentation duration could range from 200 ms to 1000 ms. Adequate presentation times also vary by the target participant group. Children, language learners, or individuals with reading problems of any kind might often need longer presentation times than the average university student participant. When the participant responds before the maximum stimulus presentation time is over, the trial ends, the stimulus disappears, and the next trial is initiated.  
     - The letter strings should be presented in a different random order for each participant.
 
-- Particiant response 
+- Participant response 
     - Typically, participants are instructed to respond by pressing on a keyboard, e.g., Left key: “d”, right key: “k”
     - Alternatively, one can implement a go/no-go task with only button presses for words or non-words. 
     - Suppose the aim is to directly compare words and non-words (i.e., the so-called lexicality effect). In that case, it is recommended to counterbalance the response key between participants, such that half of them will press the left key for words and the right key for pseudowords, and the other half the other way around.
