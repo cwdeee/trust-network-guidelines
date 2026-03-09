@@ -42,9 +42,10 @@ Possible transformations include:
 
 If one wants to model the Ex-Gaussian or shifted log-normal distribution explicitly, it is possible with Bayesian methods (e.g., as implemented in the [brms package in R](https://github.com/paul-buerkner/brms)). One could also use gamma generalized linear mixed models (GLMM), an alternative way that allows statistical inference without data transformation on non-normal distributions (see [Lo & Andrews, 2015](https://doi.org/10.3389/fpsyg.2015.01171)). 
 
+- Potentially one can implement a multi-verse analysis to effect of choices (e.g., see [Heyman et al., 2025](https://doi.org/10.1037/met0000770)).
 
 ## Statistics 
-### Sanity check analysis  ![Importance Rating 2](images/rating4.png)
+### Sanity check analysis  ![Importance Rating 2](images/rating5.png)
 Some effects are well-established and can serve as a sanity check to ensure good data quality. We expect long items to be responded to more slowly than short items, and pseudowords more slowly than words; there should also be an interaction between these, with a more substantial length effect for pseudowords than words (e.g., [Weekes, 1997](https://doi.org/10.1080/713755710)). Alternatively, one can investigate the word frequency effect. 
 If the main effects and interaction are not present, one should troubleshoot the following: 
 
@@ -53,13 +54,14 @@ If the main effects and interaction are not present, one should troubleshoot the
 <!--- - The participant responses (do they provide atypically short or long responses, potentially suggesting low engagement with the task; e.g., if a participants wants that the experiment ends fast the best strategy would be to do a reaction time task where one presses a button irrespective of stimulus quality as fast as possible, ignoring that the instruction would be also to do the task correctly).  --->
 
 ### Assessing the effect of interest  ![Importance Rating 2](images/rating5.png)
-- We recommend Linear Mixed Effect modelling on trial-level data, with crossed random effects for item and participant (see the [lme4 package](https://github.com/lme4/lme4) for a frequentist and [brms package](https://github.com/paul-buerkner/brms) for a Bayesian approach). See [Baayen, Davidson & Bates (2008)](https://doi.org/10.1016/j.jml.2007.12.005) or [Meteyard & Davies (2020)](https://doi.org/10.1016/j.jml.2020.104092)for a general tutorial.  
+- We recommend linear mixed-effects modelling at the trial level, with crossed random effects for item and participant (see the [lme4 package](https://github.com/lme4/lme4) for a frequentist and [brms package](https://github.com/paul-buerkner/brms) for a Bayesian approach). See [Baayen, Davidson & Bates (2008)](https://doi.org/10.1016/j.jml.2007.12.005) or [Meteyard & Davies (2020)](https://doi.org/10.1016/j.jml.2020.104092)for a general tutorial.  
 - Center all continuous variables (i.e., subtract the mean of all values of each given variable from the value itself, so that the average is 0) - this means that the estimates of the model will represent the grand mean. We strongly advise against dichotomising continuous variables as several potential problems can arise (e.g., equal distribution of cases, etc.)
 - Contrast code dichotomous variables (e.g., see [Schad et al., 2020](https://doi.org/10.1016/j.jml.2019.104038) for a tutorial).
 - Fit the fixed effect specification in accordance with the hypothesis (e.g., if interested in the frequency-by-lexicality interaction: rt ~ freq * lex; R formula syntax)
-- Then, add covariates of no interest as fixed effects (frequency, trial order, previous trial RT, orthographic/phonological Levenshtein distance, Age of Acquisition, etc.).
+- Then, add covariates of no interest as fixed effects (frequency, trial order, previous trial RT, orthographic/phonological Levenshtein distance, Age of Acquisition, etc.). Note that the included variables are motivated by theoretical considerations.
 - For a tutorial regarding the random effect specification, see [Bates et al. (2018)](https://doi.org/10.48550/arXiv.1506.04967)
 - Use theoretical knowledge about the different predictors to decide whether the effect of continuous variables should be linear or not (e.g., see [Kliegl et al., 2006](https://doi.org/10.1037/0096-3445.135.1.12))
+- Central to this approach is a repeated measures design. 
 
 *Important*: The standards in the field are ever changing, so it is every researcher's responsibility to stay as up to date as possible.
  
@@ -100,3 +102,5 @@ Beyond measuring an effect or phenomenon, one typically needs to implement a dif
     - Explainations based on archetectual constraints (i.e., compare [Linke et al., 2017](https://doi.org/10.1371/journal.pone.0183876) vs. [Hannagan et al., 2014](https://doi.org/10.1371/journal.pone.0084843)) or through implementation of different training regimes ([Hannagan et al., 2022](https://doi.org/10.1073/pnas.2104779118)) or the investigation of neuro-cognitive processes related to reading ([Rajalingham et al., 2020](https://doi.org/10.1038/s41467-020-17714-3); but see model comparisons can be applied to infer over-prediction and explanation focused models [Pauli et al., 2025](https://doi.org/10.1101/2025.05.16.654419)).
     - Investigating memory structure (e.g., [Trautwein et al., 2018](https://doi.org/10.3389/fpsyg.2018.02252) or [Gatti et al., 2023](https://doi.org/10.1037/xge0001304))
     - Diagnostics (e.g., [Schmidtke & Moro, 2020](https://doi.org/10.1002/rrq.362); [Gagl & Gregorova, 2024](https://doi.org/10.1038/s41539-024-00237-7); but see [Ziegler et al., 2020](https://doi.org/10.1177/0956797618823540) for an approach using a explaination focused model)
+
+*Important: Share your data so these analyses can be conducted.* 
