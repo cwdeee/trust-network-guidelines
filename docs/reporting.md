@@ -6,7 +6,7 @@ Reporting the research process transparently will allow others to reproduce the 
 - Hypothesis: A pre-registration is highly recommended if the study is confirmatory and involves testing a specific hypothesis. Here, one should include the power calculation (to obtain the number of words and number of participants) and the statistical model, including the covariates and random effects structure. If highlighted as an exploration model, modifications can be conducted post-hoc but must be transparently reported.
 - Exploratory analyses: If one cannot determine a hypothesis a priori, one should transparently report that the analyses are exploratory
 
-## Documentation of contributions and sources  ![Importance Rating 2](images/rating4.png)
+## Documentation of contributions and sources  ![Importance Rating 2](images/rating5.png)
 
 - Keep track of contributions to the study, relevant papers and discussions with collaborators.
 - We recommend specifying author contributions using the CRedIT system to keep track and determine whether a contribution warrants co-authorship ([Holcombe, 2019](https://doi.org/10.3390/publications7030048)).
@@ -29,7 +29,7 @@ Reporting the research process transparently will allow others to reproduce the 
     - Pilot studies that were used to inform decisions, along with justifications (as appendix or supplementary materials)
     - Experimental setup: e.g., online, Lab, field, or similar
 
-## Experimental procedure  ![Importance Rating 2](images/rating4.png)
+## Experimental procedure  ![Importance Rating 2](images/rating5.png)
 Note that the following are suggestions for what to report, rather than an exhaustive list.
 
 - Equipment:
