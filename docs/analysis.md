@@ -61,6 +61,7 @@ If the main effects and interaction are not present, one should troubleshoot the
 - Then, add covariates of no interest as fixed effects (frequency, trial order, previous trial RT, orthographic/phonological Levenshtein distance, Age of Acquisition, etc.). Note that the included variables are motivated by theoretical considerations.
 - For a tutorial regarding the random effect specification, see [Bates et al. (2018)](https://doi.org/10.48550/arXiv.1506.04967)
 - Use theoretical knowledge about the different predictors to decide whether the effect of continuous variables should be linear or not (e.g., see [Kliegl et al., 2006](https://doi.org/10.1037/0096-3445.135.1.12))
+- emmeans analysis (e.g., see [Documentation HERE](https://rvlenth.github.io/emmeans/index.html)) is an option for pairwise comparison of the levels of a fixed effect (or interaction) from a (g)lmer model 
 - Central to this approach is a repeated measures design. 
 
 *Important*: The standards in the field are ever changing, so it is every researcher's responsibility to stay as up to date as possible.
